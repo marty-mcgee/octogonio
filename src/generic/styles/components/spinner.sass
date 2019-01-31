@@ -1,0 +1,55 @@
+$spinner__size: 20px
+$spinner__size-large: 80px
+$spinner__text-width: 110px
+$spinner__border-width: 3px
+$spinner__border-width-large: 5px
+$spinner__track-color: rgba(0, 0, 0, .2)
+$spinner__highlight-color: $palette-shade-alpha
+$spinner__track-color--dark: $palette-base-ui
+$spinner__highlight-color--dark: $palette-alpha
+
+$spinner-container__margin-y : $spinner__text-width - $spinner__size-large - $base-spacing-unit
+
+.spinner
+    display: block
+    height: $spinner__size
+    width: $spinner__size
+    border-radius: $spinner__size
+    border: solid $spinner__border-width $spinner__track-color
+    border-color: $spinner__track-color $spinner__track-color $spinner__track-color $spinner__highlight-color
+    animation: spin 1s infinite linear
+
+    &:after
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-top: -($spinner__size / 2)
+        margin-left: -($spinner__size / 2)
+
+.spinner--dark
+    border-color: $spinner__track-color--dark $spinner__track-color--dark $spinner__track-color--dark $spinner__highlight-color--dark
+
+
+.spinner--large
+    height: $spinner__size-large
+    width: $spinner__size-large
+    border-radius: $spinner__size-large
+    border-width: $spinner__border-width-large
+
+    &:after
+        margin-top: -($spinner__size-large / 2)
+        margin-left: -($spinner__size-large / 2)
+
+
+.spinner-container
+    margin-top: $spinner-container__margin-y
+    margin-bottom: $spinner-container__margin-y
+
+.spinner-container__subtext
+    margin-top: $base-spacing-unit
+    text-align: center
+    color: $palette-shade-gamma
+    font-size: rem(14px)
+    line-height: 1.4
+    word-break: break-word
+    width: $spinner__text-width

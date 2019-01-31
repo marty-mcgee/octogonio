@@ -1,0 +1,119 @@
+$block-list__item-height  : 46px
+$block-list__font-size    : 12px
+$block-list__line-height  : 1
+
+$block-list__inner-height : $block-list__font-size * $block-list__line-height
+$block-list__padding-y    : ($block-list__item-height - $block-list__inner-height) / 2
+$block-list__padding-x    : 12px
+
+$block-list__item-height--compact : 38px
+$block-list__font-size--compact   : 12px
+$block-list__padding-y--compact   : ($block-list__item-height--compact - $block-list__inner-height) / 2
+$block-list__line-height--compact : ($block-list__item-height--compact - ($block-list__padding-y--compact * 2)) / $block-list__font-size--compact
+
+.block-list
+    list-style: none
+    margin: 0
+    padding: 0
+
+.block-list__item
+    list-style: none
+    overflow: hidden
+    cursor: pointer
+    user-select: none
+    -webkit-tap-highlight-color: transparent
+
+    &:not(:last-of-type)
+        border-bottom: solid 1px $palette-shade-gamma
+
+.block-list__content-spacing
+    padding: $block-list__padding-y $block-list__padding-x
+
+.block-list__body
+    height: $block-list__item-height
+    font-size: rem($block-list__font-size)
+    line-height: $block-list__line-height
+    padding: $block-list__padding-y $block-list__padding-x
+
+    .block-list__item:not(.functionality-is-disabled).is-active &,
+    .block-list__item:not(.functionality-is-disabled):hover &
+        @media screen and (max-width: $mobile-small-bp)
+            +txt-truncate(90px)
+
+
+$block-list__handle-arrow-size: 4px
+$block-list__handle-arrow-spacing: 2px
+$block-list__handle-arrow-color: rgba(255, 255, 255, .25)
+.block-list__item-handle
+    position: relative
+    height: $block-list__item-height
+    width: $block-list__item-height
+    background-color: rgba(0, 0, 0, .25)
+    touch-action: none
+
+    .functionality-is-disabled &
+        opacity: 0.25
+        pointer-events: none
+
+    &::before,
+    &::after
+        position: absolute
+        content: ""
+        width: 0
+        height: 0
+        border-style: solid
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+    &::before
+        margin-top: -(($block-list__handle-arrow-size / 2) + $block-list__handle-arrow-spacing)
+        border-width: 0 $block-list__handle-arrow-size $block-list__handle-arrow-size $block-list__handle-arrow-size
+        border-color: transparent transparent $block-list__handle-arrow-color transparent
+    &::after
+        margin-top: (($block-list__handle-arrow-size / 2) + $block-list__handle-arrow-spacing)
+        border-width: $block-list__handle-arrow-size $block-list__handle-arrow-size 0 $block-list__handle-arrow-size
+        border-color: $block-list__handle-arrow-color transparent transparent transparent
+
+
+.block-list__button
+    &.is-disablable
+        opacity: 0.15
+
+    .block-list__item:not(.functionality-is-disabled).is-active &.is-disablable,
+    .block-list__item:not(.functionality-is-disabled):hover &.is-disablable
+        opacity: 1
+
+    @media screen and (max-width: $mobile-small-bp)
+        &.is-disablable
+            display: none
+
+        .block-list__item:not(.functionality-is-disabled).is-active &.is-disablable,
+        .block-list__item:not(.functionality-is-disabled):hover &.is-disablable
+            display: block
+
+.block-list__button-icon
+    display: block
+    width: $block-list__font-size
+    height: $block-list__font-size
+
+
+.block-list--compact
+    .block-list__body
+        height: $block-list__item-height--compact
+        padding: $block-list__padding-y--compact $block-list__padding-x
+        font-size: rem($block-list__font-size--compact)
+        line-height: $block-list__line-height--compact
+
+.block-list--dark
+    .block-list__item
+        background-color: $palette-alpha-dark
+
+        &:not(:last-of-type)
+            border-bottom: solid 1px $palette-alpha
+
+    .block-list__body
+        color: #aaa
+
+    .block-list__item.is-active .block-list__body
+        color: #fff

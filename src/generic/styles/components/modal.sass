@@ -1,0 +1,58 @@
+.modal
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 10
+    transition: all 0.25s ease-in-out, z-index 0s ease 0.25s
+    opacity: 0
+    z-index: -1
+
+    &.is-active
+        transition: all 0.25s ease-in-out
+        opacity: 1
+        pointer-events: all
+        z-index: 10
+
+.modal__bg
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: rgba(0, 0, 0, .9)
+    z-index: 0
+
+.modal__box-container
+    max-width: 500px
+    max-height: 100%
+    padding: $base-spacing-unit / 2
+    opacity: 0
+    overflow: auto
+    will-change: transform
+    transform: scale(.9)
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out
+
+    .modal.is-active &
+        opacity: 1
+        transform: scale(1)
+
+    .modal--auto-width &
+        width: auto
+
+    .modal--small &
+        width: 281px
+
+.modal__header
+    background-color: $palette-shade-zeta
+    color: $palette-shade-alpha
+    user-select: none
+
+.modal__close-button
+    font-size: rem(20px)
+    line-height: 1
+    cursor: pointer

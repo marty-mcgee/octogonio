@@ -1,0 +1,25 @@
+=dropdown-icon
+    width: 0
+    height: 0
+    display: block
+    border-style: solid
+    border-width: 8.7px 5px 0 5px
+    border-color: rgba($palette-base-text, .5) transparent transparent transparent
+    pointer-events: none
+    transition: transform .15s ease-in-out
+
+    .expandable.is-expanded &
+        transform: rotate(180deg)
+
+=dropdown-icon-inline-psuedo
+    +dropdown-icon
+    position: relative
+    content: ""
+    display: inline-block
+    vertical-align: middle
+    top: -1px
+
+.dropdown-icon-before
+    &::before
+        +dropdown-icon-inline-psuedo
+        margin-right: $base-spacing-unit / 2

@@ -1,0 +1,13 @@
+.site
+    overflow: hidden
+    display: flex // [MM]
+    @media screen and (max-width: $mobile-bp)
+        height: 100vh
+
+.site__content
+    position: relative
+    //flex: 1 1 auto // [MM]
+    overflow-y: auto
+
+.site__fixed
+    flex: 0 0 auto

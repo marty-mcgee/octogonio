@@ -10,7 +10,7 @@
     "start": "node tools/wizard.js",
     "phonegap": "SET NODE_ENV=production & node node_modules/webpack/bin/webpack.js --config=webpack.config.js --env.platform=generic --env.isPhoneGap=true --colors",
     "phonegapdev": "SET NODE_ENV=development & node node_modules/webpack/bin/webpack.js --config=webpack.config.js --env.platform=generic --env.isPhoneGap=true --colors --watch",
-    "build": "SET NODE_ENV=development & node node_modules/webpack/bin/webpack.js --config=webpack.config.js --env.platform=generic --colors --progress --watch",
+    "build": "node node_modules/webpack/bin/webpack.js --config=webpack.config.js --env.platform=generic --colors --progress --watch",
     "dev": "SET NODE_ENV=development & node node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --watch --hot --inline --config=webpack.config.js --env.platform=generic --env.isPhoneGap=false --colors",
     "prod": "SET NODE_ENV=production & node node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --watch --config=webpack.config.js --env.platform=generic --env.isPhoneGap=false --colors",
     "analyse": "node node_modules/webpack/bin/webpack.js --config=webpack.config.js --env.platform=generic --colors --json | node node_modules/webpack-bundle-size-analyzer/webpack-bundle-size-analyzer",

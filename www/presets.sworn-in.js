@@ -126,8 +126,8 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(preset, "preset", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\utils\\presets\\sworn-in.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\utils\\presets\\sworn-in.js");
+  reactHotLoader.register(preset, "preset", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\utils\\presets\\sworn-in.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\utils\\presets\\sworn-in.js");
   leaveModule(module);
 })();
 
@@ -143,9 +143,9 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(preset, "preset", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\utils\\presets\\sworn-in.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\utils\\presets\\sworn-in.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\utils\\presets\\sworn-in.js");
+  reactHotLoader.register(preset, "preset", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\utils\\presets\\sworn-in.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\utils\\presets\\sworn-in.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\utils\\presets\\sworn-in.js");
   leaveModule(module);
 })();
 

@@ -178,8 +178,8 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(AllowedLengthsController, "AllowedLengthsController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\AllowedLengthsController.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\AllowedLengthsController.js");
+  reactHotLoader.register(AllowedLengthsController, "AllowedLengthsController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\AllowedLengthsController.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\AllowedLengthsController.js");
   leaveModule(module);
 })();
 
@@ -195,9 +195,9 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(AllowedLengthsController, "AllowedLengthsController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\AllowedLengthsController.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\AllowedLengthsController.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\AllowedLengthsController.js");
+  reactHotLoader.register(AllowedLengthsController, "AllowedLengthsController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\AllowedLengthsController.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\AllowedLengthsController.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\AllowedLengthsController.js");
   leaveModule(module);
 })();
 
@@ -325,8 +325,8 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(FadeOutDurationController, "FadeOutDurationController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\FadeOutDurationController.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\FadeOutDurationController.js");
+  reactHotLoader.register(FadeOutDurationController, "FadeOutDurationController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\FadeOutDurationController.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\FadeOutDurationController.js");
   leaveModule(module);
 })();
 
@@ -342,9 +342,9 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(FadeOutDurationController, "FadeOutDurationController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\FadeOutDurationController.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\FadeOutDurationController.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\FadeOutDurationController.js");
+  reactHotLoader.register(FadeOutDurationController, "FadeOutDurationController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\FadeOutDurationController.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\FadeOutDurationController.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\FadeOutDurationController.js");
   leaveModule(module);
 })();
 
@@ -468,8 +468,8 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(HitChanceController, "HitChanceController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\HitChanceController.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\HitChanceController.js");
+  reactHotLoader.register(HitChanceController, "HitChanceController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\HitChanceController.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\HitChanceController.js");
   leaveModule(module);
 })();
 
@@ -485,9 +485,9 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(HitChanceController, "HitChanceController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\HitChanceController.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\HitChanceController.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\HitChanceController.js");
+  reactHotLoader.register(HitChanceController, "HitChanceController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\HitChanceController.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\HitChanceController.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\HitChanceController.js");
   leaveModule(module);
 })();
 
@@ -897,16 +897,16 @@ function (_Component) {
     return;
   }
 
-  reactHotLoader.register(getCategoriesFromSounds, "getCategoriesFromSounds", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(PercentageViewer, "PercentageViewer", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(SoundRow, "SoundRow", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(renderSoundsInCategories, "renderSoundsInCategories", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(SoundsPane, "SoundsPane", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(renderSequencesPane, "renderSequencesPane", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(renderSettingsPane, "renderSettingsPane", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(getBufferFromSound, "getBufferFromSound", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(playInstrumentSound, "playInstrumentSound", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(InstrumentList, "InstrumentList", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(getCategoriesFromSounds, "getCategoriesFromSounds", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(PercentageViewer, "PercentageViewer", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(SoundRow, "SoundRow", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(renderSoundsInCategories, "renderSoundsInCategories", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(SoundsPane, "SoundsPane", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(renderSequencesPane, "renderSequencesPane", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(renderSettingsPane, "renderSettingsPane", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(getBufferFromSound, "getBufferFromSound", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(playInstrumentSound, "playInstrumentSound", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(InstrumentList, "InstrumentList", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
   leaveModule(module);
 })();
 
@@ -922,16 +922,16 @@ function (_Component) {
     return;
   }
 
-  reactHotLoader.register(getCategoriesFromSounds, "getCategoriesFromSounds", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(PercentageViewer, "PercentageViewer", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(SoundRow, "SoundRow", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(renderSoundsInCategories, "renderSoundsInCategories", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(SoundsPane, "SoundsPane", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(renderSequencesPane, "renderSequencesPane", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(renderSettingsPane, "renderSettingsPane", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(getBufferFromSound, "getBufferFromSound", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(playInstrumentSound, "playInstrumentSound", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
-  reactHotLoader.register(InstrumentList, "InstrumentList", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(getCategoriesFromSounds, "getCategoriesFromSounds", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(PercentageViewer, "PercentageViewer", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(SoundRow, "SoundRow", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(renderSoundsInCategories, "renderSoundsInCategories", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(SoundsPane, "SoundsPane", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(renderSequencesPane, "renderSequencesPane", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(renderSettingsPane, "renderSettingsPane", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(getBufferFromSound, "getBufferFromSound", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(playInstrumentSound, "playInstrumentSound", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
+  reactHotLoader.register(InstrumentList, "InstrumentList", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\InstrumentList.js");
   leaveModule(module);
 })();
 
@@ -1121,10 +1121,10 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(getNewAllowedLength, "getNewAllowedLength", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\NotePanel.js");
-  reactHotLoader.register(absolutePath, "absolutePath", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\NotePanel.js");
-  reactHotLoader.register(NotePanel, "NotePanel", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\NotePanel.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\NotePanel.js");
+  reactHotLoader.register(getNewAllowedLength, "getNewAllowedLength", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\NotePanel.js");
+  reactHotLoader.register(absolutePath, "absolutePath", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\NotePanel.js");
+  reactHotLoader.register(NotePanel, "NotePanel", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\NotePanel.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\NotePanel.js");
   leaveModule(module);
 })();
 
@@ -1140,11 +1140,11 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(getNewAllowedLength, "getNewAllowedLength", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\NotePanel.js");
-  reactHotLoader.register(absolutePath, "absolutePath", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\NotePanel.js");
-  reactHotLoader.register(NotePanel, "NotePanel", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\NotePanel.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\NotePanel.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\NotePanel.js");
+  reactHotLoader.register(getNewAllowedLength, "getNewAllowedLength", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\NotePanel.js");
+  reactHotLoader.register(absolutePath, "absolutePath", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\NotePanel.js");
+  reactHotLoader.register(NotePanel, "NotePanel", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\NotePanel.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\NotePanel.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\NotePanel.js");
   leaveModule(module);
 })();
 
@@ -1269,8 +1269,8 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(PitchController, "PitchController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\PitchController.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\PitchController.js");
+  reactHotLoader.register(PitchController, "PitchController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\PitchController.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\PitchController.js");
   leaveModule(module);
 })();
 
@@ -1286,9 +1286,9 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(PitchController, "PitchController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\PitchController.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\PitchController.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\PitchController.js");
+  reactHotLoader.register(PitchController, "PitchController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\PitchController.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\PitchController.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\PitchController.js");
   leaveModule(module);
 })();
 
@@ -1417,8 +1417,8 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(RepeatingHitsController, "RepeatingHitsController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\RepeatingHitsController.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\RepeatingHitsController.js");
+  reactHotLoader.register(RepeatingHitsController, "RepeatingHitsController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\RepeatingHitsController.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\RepeatingHitsController.js");
   leaveModule(module);
 })();
 
@@ -1434,9 +1434,9 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(RepeatingHitsController, "RepeatingHitsController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\RepeatingHitsController.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\RepeatingHitsController.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\RepeatingHitsController.js");
+  reactHotLoader.register(RepeatingHitsController, "RepeatingHitsController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\RepeatingHitsController.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\RepeatingHitsController.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\RepeatingHitsController.js");
   leaveModule(module);
 })();
 
@@ -1576,8 +1576,8 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(SequenceController, "SequenceController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\SequenceController.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\SequenceController.js");
+  reactHotLoader.register(SequenceController, "SequenceController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\SequenceController.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\SequenceController.js");
   leaveModule(module);
 })();
 
@@ -1593,9 +1593,9 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(SequenceController, "SequenceController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\SequenceController.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\SequenceController.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\SequenceController.js");
+  reactHotLoader.register(SequenceController, "SequenceController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\SequenceController.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\SequenceController.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\SequenceController.js");
   leaveModule(module);
 })();
 
@@ -1787,9 +1787,9 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(Tabgroup, "Tabgroup", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
-  reactHotLoader.register(Tabpane, "Tabpane", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
+  reactHotLoader.register(Tabgroup, "Tabgroup", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
+  reactHotLoader.register(Tabpane, "Tabpane", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
   leaveModule(module);
 })();
 
@@ -1805,10 +1805,10 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(Tabgroup, "Tabgroup", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
-  reactHotLoader.register(Tabpane, "Tabpane", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
+  reactHotLoader.register(Tabgroup, "Tabgroup", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
+  reactHotLoader.register(Tabpane, "Tabpane", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\Tabgroup.js");
   leaveModule(module);
 })();
 
@@ -1933,8 +1933,8 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(VolumeController, "VolumeController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\VolumeController.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\VolumeController.js");
+  reactHotLoader.register(VolumeController, "VolumeController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\VolumeController.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\VolumeController.js");
   leaveModule(module);
 })();
 
@@ -1950,9 +1950,9 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(VolumeController, "VolumeController", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\VolumeController.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\VolumeController.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\components\\VolumeController.js");
+  reactHotLoader.register(VolumeController, "VolumeController", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\VolumeController.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\VolumeController.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\components\\VolumeController.js");
   leaveModule(module);
 })();
 
@@ -2025,10 +2025,10 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(mapStateToProps, "mapStateToProps", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Instruments.js");
-  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Instruments.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Instruments.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Instruments.js");
+  reactHotLoader.register(mapStateToProps, "mapStateToProps", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Instruments.js");
+  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Instruments.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Instruments.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Instruments.js");
   leaveModule(module);
 })();
 
@@ -2044,11 +2044,11 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(mapStateToProps, "mapStateToProps", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Instruments.js");
-  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Instruments.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Instruments.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Instruments.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Instruments.js");
+  reactHotLoader.register(mapStateToProps, "mapStateToProps", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Instruments.js");
+  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Instruments.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Instruments.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Instruments.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Instruments.js");
   leaveModule(module);
 })();
 
@@ -2251,10 +2251,10 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(SequencePanel, "SequencePanel", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
-  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
+  reactHotLoader.register(SequencePanel, "SequencePanel", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
+  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
   leaveModule(module);
 })();
 
@@ -2270,11 +2270,11 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(SequencePanel, "SequencePanel", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
-  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
+  reactHotLoader.register(SequencePanel, "SequencePanel", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
+  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\SequencePanel.js");
   leaveModule(module);
 })();
 
@@ -2348,10 +2348,10 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(mapStateToProps, "mapStateToProps", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Sequences.js");
-  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Sequences.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Sequences.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Sequences.js");
+  reactHotLoader.register(mapStateToProps, "mapStateToProps", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Sequences.js");
+  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Sequences.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Sequences.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Sequences.js");
   leaveModule(module);
 })();
 
@@ -2367,11 +2367,11 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(mapStateToProps, "mapStateToProps", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Sequences.js");
-  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Sequences.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Sequences.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Sequences.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\containers\\Sequences.js");
+  reactHotLoader.register(mapStateToProps, "mapStateToProps", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Sequences.js");
+  reactHotLoader.register(actions, "actions", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Sequences.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Sequences.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Sequences.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\containers\\Sequences.js");
   leaveModule(module);
 })();
 
@@ -2424,8 +2424,8 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(getPercentage, "getPercentage", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\modules\\getPercentage.js");
-  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\modules\\getPercentage.js");
+  reactHotLoader.register(getPercentage, "getPercentage", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\modules\\getPercentage.js");
+  reactHotLoader.register(_default, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\modules\\getPercentage.js");
   leaveModule(module);
 })();
 
@@ -2441,9 +2441,9 @@ var _default2 = _default;
     return;
   }
 
-  reactHotLoader.register(getPercentage, "getPercentage", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\modules\\getPercentage.js");
-  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\modules\\getPercentage.js");
-  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\modules\\getPercentage.js");
+  reactHotLoader.register(getPercentage, "getPercentage", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\modules\\getPercentage.js");
+  reactHotLoader.register(_default, "_default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\modules\\getPercentage.js");
+  reactHotLoader.register(_default2, "default", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\modules\\getPercentage.js");
   leaveModule(module);
 })();
 
@@ -2558,7 +2558,7 @@ function (_Component) {
     return;
   }
 
-  reactHotLoader.register(Instruments, "Instruments", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\routes\\Instruments.js");
+  reactHotLoader.register(Instruments, "Instruments", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\routes\\Instruments.js");
   leaveModule(module);
 })();
 
@@ -2574,7 +2574,7 @@ function (_Component) {
     return;
   }
 
-  reactHotLoader.register(Instruments, "Instruments", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\routes\\Instruments.js");
+  reactHotLoader.register(Instruments, "Instruments", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\routes\\Instruments.js");
   leaveModule(module);
 })();
 
@@ -2716,8 +2716,8 @@ function (_Component) {
     return;
   }
 
-  reactHotLoader.register(getDescription, "getDescription", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\routes\\Sequences.js");
-  reactHotLoader.register(Sequences, "Sequences", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\routes\\Sequences.js");
+  reactHotLoader.register(getDescription, "getDescription", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\routes\\Sequences.js");
+  reactHotLoader.register(Sequences, "Sequences", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\routes\\Sequences.js");
   leaveModule(module);
 })();
 
@@ -2733,8 +2733,8 @@ function (_Component) {
     return;
   }
 
-  reactHotLoader.register(getDescription, "getDescription", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\routes\\Sequences.js");
-  reactHotLoader.register(Sequences, "Sequences", "C:\\webroot\\octogonio\\apps\\octogon.io\\src\\generic\\scripts\\app\\routes\\Sequences.js");
+  reactHotLoader.register(getDescription, "getDescription", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\routes\\Sequences.js");
+  reactHotLoader.register(Sequences, "Sequences", "C:\\webroot\\octogonio\\apps\\octogonio\\src\\generic\\scripts\\app\\routes\\Sequences.js");
   leaveModule(module);
 })();
 

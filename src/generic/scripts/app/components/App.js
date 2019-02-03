@@ -82,7 +82,7 @@ class App extends Component {
 
     constructor(props) {
         super(props)
-        self = this
+        // self = this
         
         const { cookies } = props
 
@@ -107,7 +107,9 @@ class App extends Component {
         this.emit = this.emit.bind(this)
         this.joined = this.joined.bind(this)
         this.updateAudience = this.updateAudience.bind(this)
+        this.start = this.start.bind(this)
         this.ask = this.ask.bind(this)
+        this.updateResults = this.updateResults.bind(this)
 
         console.log("== [MM] App Component constructor loaded: this.state ==")
         console.log(this.state)
@@ -122,7 +124,7 @@ class App extends Component {
         this.socket.on('welcome', this.updateState)
         this.socket.on('joined', this.joined)
         this.socket.on('audience', this.updateAudience)
-        this.socket.on('start', this.updateState)
+        this.socket.on('start', this.start)
         this.socket.on('ask', this.ask)
         this.socket.on('results', this.updateResults)
     }
@@ -149,7 +151,7 @@ class App extends Component {
         this.setState({ 
             status: 'disconnected',
             title: 'Room Disconnected',
-            speaker: ''
+            speaker: {}
         })
     }
 
@@ -170,7 +172,10 @@ class App extends Component {
 
     start(room) {
         if (this.state.member.type === 'speaker') {
+            console.log("does this ever fire?", room)
             sessionStorage.title = room.title
+        } else {
+            console.log("it doesn't look like it.")
         }
         this.setState(room)
     }

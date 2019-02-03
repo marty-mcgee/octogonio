@@ -1,8 +1,8 @@
 {
   "name": "octogon.io",
-  "version": "1.3.0",
-  "description": "Extending DJEN, a music breakdown generator.",
-  "author": "Ross McMillan - @RossMcMillan92, Marty McGee - @CompanyJuice",
+  "version": "0.1.3",
+  "description": "Music generation with React, Redux, Web Audio API on GraphQL + Heroku",
+  "author": "Marty McGee - @CompanyJuice",
   "main": "",
   "scripts": {
     "spec": "jest --verbose --colors --verbose --coverage",

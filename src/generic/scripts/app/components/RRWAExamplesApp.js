@@ -82,7 +82,7 @@ class RRWAExamplesApp extends PureComponent {
             </div>
             <div
               className={`button ${msg === 'BUZZING' ? 'off' : 'on'} ${oscCount === 0 ? 'hide' : ''}`}
-              onClick={msg === 'AUDIO CONTEXT CLOSED!' ? null : this.props.susRes}>
+              onClick={msg === 'AUDIO CONTEXT CLOSED!' ? this.props.susRes : this.props.susRes}>
               {susResToggle}
             </div>
             <div
@@ -96,7 +96,6 @@ class RRWAExamplesApp extends PureComponent {
     )
   }
 }
-
 
 export default connect(
   state => ({...state}),

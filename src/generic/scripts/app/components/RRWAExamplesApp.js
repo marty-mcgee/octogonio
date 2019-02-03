@@ -1,8 +1,8 @@
-import React, { PureComponent } from 'react';
-import { connect } from 'react-redux';
-import { actionCreators } from 'react-redux-webaudio';
-import { startCtxUI, closeCtxUI, susResAudioCtx } from '../actions/rrwa';
-const { emit } = actionCreators;
+import React, { PureComponent } from 'react'
+import { connect } from 'react-redux'
+import { actionCreators } from 'react-redux-webaudio'
+import { startCtxUI, closeCtxUI, susResAudioCtx } from '../actions/rrwa'
+const { emit } = actionCreators
 
 
 /**
@@ -12,63 +12,63 @@ const { emit } = actionCreators;
  */
 const start = (audioCtx, getCurrentTime) => {
   // create Oscillator and gain node
-  let oscillator = audioCtx.createOscillator();
-  let gainNode = audioCtx.createGain();
+  let oscillator = audioCtx.createOscillator()
+  let gainNode = audioCtx.createGain()
 
   // connect oscillator to gain node to speakers
-  oscillator.connect(gainNode);
-  gainNode.connect(audioCtx.destination);
+  oscillator.connect(gainNode)
+  gainNode.connect(audioCtx.destination)
 
   // Make noise, sweet noise
-  oscillator.type = 'square';
-  oscillator.frequency.value = 400; // value in hertz
-  oscillator.start(getCurrentTime());
+  oscillator.type = 'square'
+  oscillator.frequency.value = 200 // value in hertz
+  oscillator.start(getCurrentTime())
 
-  gainNode.gain.value = 0.1;
-};
+  gainNode.gain.value = 0.1
+}
 
 /** Another audio event. */
 const susRes = (audioCtx) => {
   if (audioCtx.state === 'running') {
-    audioCtx.suspend();
+    audioCtx.suspend()
   } else if (audioCtx.state === 'suspended') {
-    audioCtx.resume();
+    audioCtx.resume()
   }
-};
+}
 
 /** Another audio event. */
-const close = (audioCtx) => audioCtx.close();
+const close = (audioCtx) => audioCtx.close()
 
 
 /** React Component */
 class RRWAExamplesApp extends PureComponent {
 
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       closed: false,
       oscCount: 0
-    };
+    }
   }
 
   handleCreate = () => {
-    this.props.start();
-    this.setState({ oscCount: this.state.oscCount + 1 });
+    console.log("DOES THIS EVER FIRE?", this.state)
+    this.props.start()
+    this.setState({ oscCount: this.state.oscCount + 1 })
   }
 
   handleKill = () => {
-    this.props.kill();
-    this.setState({ closed: true });
+    this.props.close()
+    this.setState({ closed: true })
   }
 
   render() {
-    const { oscCount } = this.state;
-    const { msg, susRes, susResToggle } = this.props.rrwa;
+    const { oscCount } = this.state
+    const { msg, susResToggle } = this.props.rrwa
 
     return (
       <div className="main">
         <div className="title"><h1>{msg}</h1></div>
-        <br />
         <div className={closed ? 'hide' : ''}>
           <div>
             <p className="bold">LOUD!</p>
@@ -77,23 +77,23 @@ class RRWAExamplesApp extends PureComponent {
           <div className="btn-wrap">
             <div
               className={`button light ${oscCount > 0 ? 'hide' : ''}`}
-              onClick={this.create}>
+              onClick={this.handleCreate}>
               {'CREATE'}
             </div>
             <div
               className={`button ${msg === 'BUZZING' ? 'off' : 'on'} ${oscCount === 0 ? 'hide' : ''}`}
-              onClick={msg === 'CLOSE' ? null : susRes}>
+              onClick={msg === 'AUDIO CONTEXT CLOSED!' ? null : this.props.susRes}>
               {susResToggle}
             </div>
             <div
               className={`button sm ${oscCount === 0 ? 'hide' : ''}`}
-              onClick={this.kill}>
+              onClick={this.handleKill}>
               {'KILL'}
             </div>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
@@ -102,16 +102,16 @@ export default connect(
   state => ({...state}),
   dispatch => ({
     start:  () => {
-      dispatch( startCtxUI() );
-      dispatch( emit( start ) );
+      dispatch( startCtxUI() )
+      dispatch( emit( start ) )
     },
     susRes: () => {
-      dispatch( susResAudioCtx() );
-      dispatch( emit( susRes ) );
+      dispatch( susResAudioCtx() )
+      dispatch( emit( susRes ) )
     },
     close: () => {
-      dispatch( closeCtxUI() );
-      dispatch( emit( close ) );
+      dispatch( closeCtxUI() )
+      dispatch( emit( close ) )
     },
   })
 )(RRWAExamplesApp);

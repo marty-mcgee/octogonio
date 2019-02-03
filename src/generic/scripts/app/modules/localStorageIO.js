@@ -6,8 +6,8 @@ import {
     map,
 } from 'ramda'
 
-// [MM] chat
-//if (typeof(window) !== 'undefined') {
+// [MM] was breaking
+// if (typeof(window) !== 'undefined') {
         
     //    getLocalStorageIO :: key -> IO String
     const getLocalStorageIO = key =>
@@ -37,5 +37,4 @@ import {
         safeGetLocalStorageIO,
     }
 
-// [MM] chat
-//}
+// }

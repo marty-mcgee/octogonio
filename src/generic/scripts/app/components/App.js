@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import { Provider } from 'react-redux'
 //import routes from 'routes'
 import Main from '../containers/Main'
+// [MM] -||-
+import TrackDragon from '../containers/TrackDragon'
 // [MM] chat
 import DevTools from '../containers/DevTools'
 import SignIn from '../components/SignIn'
@@ -32,7 +34,7 @@ import RRWAExamplesApp from '../components/RRWAExamplesApp'
 // import Apple from '../containers/App'
 // import Schmix from '../containers/Schmix'
 // [MM] audio recorder
-// import AudioRecorder from 'react-audio-recorder'
+//import AudioRecorder from 'react-audio-recorder'
 // [MM] audio player
 // import { PlayButton, Timer } from 'react-soundplayer/components'
 // // it's just an alias for `withSoundCloudAudio` but makes code clearer
@@ -77,6 +79,10 @@ import RRWAExamplesApp from '../components/RRWAExamplesApp'
 //       </div>
 //     );
 // });
+
+// [MM] redux-audio
+// import { Audio } from 'redux-audio'
+
 
 class App extends Component {
 
@@ -224,7 +230,7 @@ class App extends Component {
                                 {/* <Apple>
                                     <Schmix/>
                                 </Apple> */}
-                                {/* <AudioRecorder /> */}
+                                {/* <AudioRecorder {...this.state} /> */}
                                 {/* <AWSSoundPlayer
                                     resolveUrl={resolveUrl}
                                     clientId={clientId}
@@ -237,7 +243,11 @@ class App extends Component {
                                     resolveUrl={resolveUrl}
                                     onReady={() => console.log('track is loaded!')}   
                                 /> */}
-                                <RRWAExamplesApp />
+                                {/* <RRWAExamplesApp /> */}
+                                {/* <Audio src='http://trackdragon.com/wp-content/uploads/2014/04/Salesman.mp3' 
+                                    autoPlay uniqueId='example' controls loop /> */}
+                                
+                                <TrackDragon {...this.state} {...props} />
                                 <Main {...this.state} />
                             </div>
                         )} />

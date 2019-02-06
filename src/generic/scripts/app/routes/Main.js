@@ -224,11 +224,6 @@ export default class Main extends Component {
             : (
                 <div>
 
-                    {/* [MM] chat */}
-                    <div style={{height: '100%'}} >
-                        THIS.PROPS.CHILDREN: {this.props.children}
-                    </div>
-
                     <Player
                         route={this.props.route}
                         googleAPIHasLoaded={this.state.googleAPIHasLoaded}

@@ -27,6 +27,9 @@ import rrwa from './rrwa'
 // import { delayReducer as delay } from '../components/effects/Delay/Delay.reducers'
 //import tracks from '../containers/Schmix/reducers.js'
 
+// [MM] redux-audio
+//import { audioReducer as audio } from 'redux-audio'
+
 const rootReducer = combineReducers({
     config,
     sequences,
@@ -50,6 +53,8 @@ const rootReducer = combineReducers({
     // [MM] schmix
     // delay,
     //tracks,
+    // [MM] redux-audio
+    //audio,
 })
 
 export default rootReducer

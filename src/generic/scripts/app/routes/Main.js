@@ -52,6 +52,7 @@ export default class Main extends Component {
         //const shareID = params.shareID
         //const shareID = ""
         const shareID = this.props.shareID
+        
         console.log("== [MM] this.props ==")
         console.log(this.props)
         console.log("== [MM] end ==")
@@ -236,7 +237,7 @@ export default class Main extends Component {
                                     title="Sequences"
                                     titleClassName={expandableTitleClass}
                                     enableStateSave={true}
-                                    isExpanded={true}
+                                    isExpanded={false}
                                 >
                                     <Sequences route={this.props.route} className="u-mt1" />
                                 </Expandable>
@@ -246,6 +247,7 @@ export default class Main extends Component {
                                     title="Instruments"
                                     titleClassName={expandableTitleClass}
                                     enableStateSave={true}
+                                    isExpanded={false}
                                 >
                                     <Instruments route={this.props.route} className="u-mt1" />
                                 </Expandable>

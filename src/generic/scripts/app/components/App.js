@@ -312,7 +312,7 @@ class App extends Component {
                         {/* <Route path="/chat" component={ChatContainer}></Route> */}
                         <Route exact path="/chat" render={(props) => (
                             <div>
-                                <ChatContainer {...this.state} emit={this.emit} />
+                                <ChatContainer {...this.state} emit={this.emit} username="marty" />
                                 <Main {...this.state} />
                             </div>
                         )} />

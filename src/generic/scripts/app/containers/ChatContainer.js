@@ -7,10 +7,10 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import io from 'socket.io-client';
 
-//const socket = io('', { path: '/api/chat' });
 const socket = io('', { path: '/api/chat' })
-console.log(socket);
-const initialChannel = 'Tracking Room 1'; // NOTE: I hard coded this value for my example.  Change this as you see fit
+console.log("socket", socket);
+const initialChannel = 'Tracking Room 1'; 
+// NOTE: I hard coded this value for my example. Change this as you see fit
 
 class ChatContainer extends Component {
   componentDidMount() {

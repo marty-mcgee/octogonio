@@ -98,18 +98,18 @@ export default class Channels extends Component {
           </Modal.Header>
           <Modal.Body>
             <Form onSubmit={::this.handleModalSubmit} >
-            <FormControl
-              ref="channelName"
-              type="text"
-              help={this.validateChannelName() === 'error' && 'A channel with that name already exists!'}
-              bsStyle={this.validateChannelName()}
-              hasFeedback
-              name="channelName"
-              autoFocus="true"
-              placeholder="Enter the channel name"
-              value={this.state.channelName}
-              onChange={::this.handleModalChange}
-            />
+              <FormControl
+                ref="channelName"
+                type="text"
+                help={this.validateChannelName() === 'error' && 'A channel with that name already exists!'}
+                bsStyle={this.validateChannelName()}
+                hasFeedback
+                name="channelName"
+                autoFocus={true}
+                placeholder="Enter the channel name"
+                value={this.state.channelName}
+                onChange={::this.handleModalChange}
+              />
             </Form>
           </Modal.Body>
           <Modal.Footer>
@@ -118,7 +118,7 @@ export default class Channels extends Component {
               Create Channel
             </Button>
           </Modal.Footer>
-          </Modal>
+        </Modal>
       </div>
     );
     const moreChannelsModal = (

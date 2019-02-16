@@ -2,10 +2,13 @@ import * as types from '../constants/ActionTypes';
 import createBrowserHistory from "history/createBrowserHistory";
 const browserHistory = createBrowserHistory();
 import fetch from 'isomorphic-fetch';
-import { Cookies } from 'react-cookie';
+//import { Cookies } from 'react-cookie';
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
+
 
 export function receiveAuth() {
-  const user = 'marty' // Cookies.get('username')
+  const user = cookies.get('username')
   return {
     type: types.AUTH_LOAD_SUCCESS,
     user
@@ -13,7 +16,7 @@ export function receiveAuth() {
 }
 
 export function checkAuth() {
-  if (1 === 1) { // Cookies.get('username')
+  if (cookies.get('username')) {
     return true;
   }
   return false;
@@ -53,7 +56,7 @@ export function signOut() {
     return fetch('/api/signout')
       .then(response => {
         if(response.ok) {
-          // Cookies.remove('username')
+          cookies.remove('username')
           dispatch(receiveSignOut())
           browserHistory.push('/')
         }
@@ -73,7 +76,7 @@ export function signUp(user) {
       })
       .then(response => {
         if(response.ok) {
-          // Cookies.set('username', user.username)
+          cookies.set('username', user.username)
           dispatch(receiveUser(user.username));
           browserHistory.push('/chat');
         }
@@ -110,7 +113,7 @@ export function signIn(user) {
       })
       .then(response => {
         if(response.ok) {
-          // Cookies.set('username', user.username)
+          cookies.set('username', user.username)
           dispatch(receiveSignIn(user.username));
           browserHistory.push('/chat');
         }

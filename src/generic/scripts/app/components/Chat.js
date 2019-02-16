@@ -100,11 +100,11 @@ export default class Chat extends Component {
   render() {
     const { messages, socket, channels, activeChannel, typers, dispatch, user, screenWidth} = this.props;
     const filteredMessages = messages.filter(message => message.channelID === activeChannel);
-    const username = "marty" // this.props.user.username;
-    console.log("this.props:", this.props)
+    const username = this.props.username //this.props.user.username;
+    console.log("-||- this.props:", this.props)
     const dropDownMenu = (
       <div style={{'width': '21rem', 'top': '0', alignSelf: 'baseline', padding: '0', margin: '0', order: '1'}}>
-        <DropdownButton key={1} style={{'width': '21rem'}} id="user-menu"  bsSize="large" bsStyle="primary" title={username}>
+        <DropdownButton key={1} title={username} style={{'width': '21rem'}} id="user-menu" bsSize="large" bsStyle="primary">
           <MenuItem style={{'width': '21rem'}} eventKey="4" onSelect={::this.handleSignOut}>Sign out</MenuItem>
         </DropdownButton>
       </div>

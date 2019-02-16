@@ -1,7 +1,7 @@
 import { CHANGE_CHANNEL } from '../constants/ActionTypes';
 
 const initialState = {
-  name: 'Tracking Room 1',
+  name: 'Lobby',
   id: 0
 };
 

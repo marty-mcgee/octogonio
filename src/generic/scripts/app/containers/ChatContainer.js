@@ -9,7 +9,7 @@ import io from 'socket.io-client';
 
 const socket = io('', { path: '/api/chat' })
 console.log("socket", socket);
-const initialChannel = 'Tracking Room 1'; 
+const initialChannel = 'Lobby'; 
 // NOTE: I hard coded this value for my example. Change this as you see fit
 
 class ChatContainer extends Component {
@@ -20,6 +20,18 @@ class ChatContainer extends Component {
     }
     dispatch(actions.fetchMessages(initialChannel));
     dispatch(actions.fetchChannels(user.username));
+  }
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.props.channels !== nextProps.channels) {
+      console.log("YO YO YO CHANNELS")
+      return true;
+    }
+    if (this.props.messages !== nextProps.messages) {
+      console.log("YO YO YO MESSAGES")
+      return true;
+    }
+    console.log("YO YO YO FALSE")
+    return false;
   }
   render() {
     return (

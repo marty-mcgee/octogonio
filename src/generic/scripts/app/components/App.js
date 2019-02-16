@@ -104,7 +104,8 @@ class App extends Component {
             questions: [],
             currentQuestion: false,
             results: {},
-            name: cookies.get('name')
+            name: cookies.get('name'),
+            username: cookies.get('username')
         }
 
         this.connect = this.connect.bind(this)
@@ -120,6 +121,10 @@ class App extends Component {
         console.log("== [MM] App Component constructor loaded: this.state ==")
         console.log(this.state)
         console.log("== [MM] end ==")
+    }
+
+    componentDidMount() {
+
     }
 
     componentWillMount() {
@@ -221,7 +226,7 @@ class App extends Component {
                 <Header {...this.state} />
                 
                 {/* <Router key={Math.random()} history={this.props.history} routes={routes} /> */}
-                <Router key={Math.random()}>
+                <Router>
                     <Switch>
                         {/* <Route exact path="/" component={Main} /> */}
                         <Route exact path="/" render={(props) => (
@@ -262,21 +267,21 @@ class App extends Component {
                         <Route exact path="/audience" render={(props) => (
                             <div>
                                 <Audience {...this.state} emit={this.emit} />
-                                <Main {...this.state} />
+                                {/* <Main {...this.state} /> */}
                             </div>
                         )} />
                         {/* <Route name="speaker" path="/speaker" component={Speaker} {...this.state} /> */}
                         <Route exact path="/speaker" render={(props) => (
                             <div>
                                 <Speaker {...this.state} emit={this.emit} />
-                                <Main {...this.state} />
+                                {/* <Main {...this.state} /> */}
                             </div>
                         )} />
                         {/* <Route name="board" path="/board" handler={Board} {...this.state} /> */}
                         <Route exact path="/board" render={(props) => (
                             <div>
                                 <Board {...this.state} emit={this.emit} />
-                                <Main {...this.state} />
+                                {/* <Main {...this.state} /> */}
                             </div>
                         )} />
 
@@ -285,21 +290,21 @@ class App extends Component {
                         <Route exact path="/welcome" render={(props) => (
                             <div>
                                 <Welcome {...this.state} emit={this.emit} />
-                                <Main {...this.state} />
+                                {/* <Main {...this.state} /> */}
                             </div>
                         )} />
                         {/* <Route path="/signup" component={SignUp} /> */}
                         <Route exact path="/signup" render={(props) => (
                             <div>
                                 <SignUp {...this.state} emit={this.emit} />
-                                <Main {...this.state} />
+                                {/* <Main {...this.state} /> */}
                             </div>
                         )} />
                         {/* <Route path="/signin" component={SignIn} /> */}
                         <Route exact path="/signin" render={(props) => (
                             <div>
                                 <SignIn {...this.state} emit={this.emit} />
-                                <Main {...this.state} />
+                                {/* <Main {...this.state} /> */}
                             </div>
                         )} />
                         {/* <Route path="/signout" component={SignOut} /> */}
@@ -312,8 +317,8 @@ class App extends Component {
                         {/* <Route path="/chat" component={ChatContainer}></Route> */}
                         <Route exact path="/chat" render={(props) => (
                             <div>
-                                <ChatContainer {...this.state} emit={this.emit} username="marty" />
-                                <Main {...this.state} />
+                                <ChatContainer {...this.state} emit={this.emit} />
+                                {/* <Main {...this.state} /> */}
                             </div>
                         )} />
 

@@ -17,3 +17,6 @@ import 'styles/app.sass'
 import 'libraries/HackTimer'
 
 import 'app/index'
+
+// [MM] reactstrap
+import 'bootstrap/dist/css/bootstrap.css'

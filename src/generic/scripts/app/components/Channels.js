@@ -2,7 +2,14 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ChannelListItem from './ChannelListItem'
 import ChannelListModalItem from './ChannelListModalItem'
-import { Modal, Glyphicon, Button, Form, FormGroup, FormControl } from 'react-bootstrap' // Input
+import { Glyphicon, Form, FormGroup, FormControl } from 'react-bootstrap' // Input
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
+import Button from '@material-ui/core/Button'
+import Dialog from '@material-ui/core/Dialog'
+import DialogActions from '@material-ui/core/DialogActions'
+import DialogContent from '@material-ui/core/DialogContent'
+import DialogContentText from '@material-ui/core/DialogContentText'
+import DialogTitle from '@material-ui/core/DialogTitle'
 import * as actions from '../actions/actions'
 import uuid from 'node-uuid'
 
@@ -19,8 +26,10 @@ export default class Channels extends Component {
     this.state = {
       addChannelModal: false,
       channelName: '',
-      moreChannelsModal: false
+      moreChannelsModal: false,
+      // modal: false
     };
+    //this.toggle = this.toggle.bind(this);
   }
   handleChangeChannel(channel) {
     if(this.state.moreChannelsModal) {
@@ -30,7 +39,11 @@ export default class Channels extends Component {
   }
   openAddChannelModal(event) {
     event.preventDefault();
-    this.setState({addChannelModal: true});
+    //this.setState({addChannelModal: true});
+    this.setState(prevState => ({
+      addChannelModal: !prevState.addChannelModal
+    }));
+    console.log("event", event)
   }
   closeAddChannelModal(event) {
     try { 
@@ -49,6 +62,7 @@ export default class Channels extends Component {
     if (this.state.channelName.length < 1) {
       this.refs.channelName.getInputDOMNode().focus();
     }
+    console.log("-||- this.state", this.state)
     if (this.state.channelName.length > 0 && channels.filter(channel => {
       return channel.name === this.state.channelName.trim();
     }).length < 1) {
@@ -78,12 +92,32 @@ export default class Channels extends Component {
     this.setState({moreChannelsModal: true});
   }
   closeMoreChannelsModal(event) {
-    event.preventDefault();
+    //event.preventDefault();
     this.setState({moreChannelsModal: false});
   }
   createChannelWithinModal() {
     this.closeMoreChannelsModal();
     this.openAddChannelModal();
+  }
+  // toggle() {
+  //   console.log("modal clicked")
+  //   this.setState(prevState => ({
+  //     modal: !prevState.modal
+  //   }), () => {
+  //     console.log("modal state", this.state.modal)
+  //   });
+  // }
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.props.channels !== nextProps.channels) {
+      console.log("HEY HEY HEY CHANNELS")
+      return true;
+    }
+    if (this.props.messages !== nextProps.messages) {
+      console.log("HEY HEY HEY MESSAGES")
+      return true;
+    }
+    console.log("HEY HEY HEY FALSE")
+    return true;
   }
   render() {
     const { channels, messages } = this.props;
@@ -91,39 +125,53 @@ export default class Channels extends Component {
     const moreChannelsBoolean = channels.length > 8;
     const restOfTheChannels = channels.slice(8);
     const newChannelModal = (
-      <div>
-        <Modal key={1} show={this.state.addChannelModal} onHide={::this.closeAddChannelModal}>
-          <Modal.Header closeButton>
-            <Modal.Title>Add New Channel</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Form onSubmit={::this.handleModalSubmit} >
-              <FormControl
-                ref="channelName"
-                type="text"
-                help={this.validateChannelName() === 'error' && 'A channel with that name already exists!'}
-                bsStyle={this.validateChannelName()}
-                hasFeedback
-                name="channelName"
-                autoFocus={true}
-                placeholder="Enter the channel name"
-                value={this.state.channelName}
-                onChange={::this.handleModalChange}
-              />
-            </Form>
-          </Modal.Body>
-          <Modal.Footer>
+      <Dialog key={1} open={this.state.addChannelModal} onClose={::this.closeAddChannelModal} aria-labelledby="simple-dialog-title">
+        <DialogTitle id="simple-dialog-title">Add New Channel</DialogTitle>
+        {/* <Modal key={1} isOpen={this.state.addChannelModal} toggle={::this.openAddChannelModal} className={this.props.className}>
+          <ModalHeader toggle={::this.openAddChannelModal}>Add New Channel</ModalHeader>
+          <ModalBody> */}
+        <DialogContent>
+          <Form onSubmit={::this.handleModalSubmit} >
+            <FormControl
+              ref="channelName"
+              type="text"
+              help={this.validateChannelName() === 'error' ? 'A channel with that name already exists!' : undefined}
+              bsStyle={this.validateChannelName()}
+              name="channelName"
+              autoFocus={true}
+              placeholder="Enter the channel name"
+              value={this.state.channelName}
+              onChange={::this.handleModalChange}
+            />
+          </Form>
+          <DialogActions>
             <Button onClick={::this.closeAddChannelModal}>Cancel</Button>
             <Button disabled={this.validateChannelName() === 'error' && 'true'} onClick={::this.handleModalSubmit} type="submit">
               Create Channel
             </Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
+          </DialogActions>
+        </DialogContent>
+      </Dialog>
     );
     const moreChannelsModal = (
       <div style={{background: 'grey'}}>
-        <Modal key={2} show={this.state.moreChannelsModal} onHide={::this.closeMoreChannelsModal}>
+        <Dialog key={2} open={this.state.moreChannelsModal} onClose={::this.closeMoreChannelsModal} aria-labelledby="simple-dialog-title-more">
+          <DialogTitle id="simple-dialog-title-more">More Channels</DialogTitle>
+          <DialogContent>
+            <a onClick={::this.createChannelWithinModal} style={{'cursor': 'pointer', 'color': '#85BBE9'}}>
+              Create a channel
+            </a>
+            <ul style={{height: 'auto', margin: '0', overflowY: 'auto', padding: '0'}}>
+              {restOfTheChannels.map(channel =>
+                <ChannelListModalItem channel={channel} key={channel.id} onClick={::this.handleChangeChannel} />
+                )}
+            </ul>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={::this.closeMoreChannelsModal}>Cancel</Button>
+          </DialogActions>
+        </Dialog>
+        {/* <Modal key={2} show={this.state.moreChannelsModal} onHide={::this.closeMoreChannelsModal}>
           <Modal.Header closeButton >
             <Modal.Title>More Channels</Modal.Title>
             <a onClick={::this.createChannelWithinModal} style={{'cursor': 'pointer', 'color': '#85BBE9'}}>
@@ -140,7 +188,7 @@ export default class Channels extends Component {
           <Modal.Footer>
             <button onClick={::this.closeMoreChannelsModal}>Cancel</button>
           </Modal.Footer>
-        </Modal>
+        </Modal> */}
       </div>
     );
     return (
@@ -148,12 +196,25 @@ export default class Channels extends Component {
         <div>
           <span style={{paddingLeft: '0.8em', fontSize: '1.5em'}}>
             Channels
-            <button onClick={::this.openAddChannelModal} style={{fontSize: '0.8em', 'background': 'Transparent', marginLeft: '2.8em', 'backgroundRepeat': 'noRepeat', 'border': 'none', 'cursor': 'pointer', 'overflow': 'hidden', 'outline': 'none'}}>
-              <Glyphicon glyph="plus" />
-            </button>
+            <Button onClick={::this.openAddChannelModal} style={{fontSize: '0.8em', 'background': 'transparent', marginLeft: '2.8em', 'backgroundRepeat': 'noRepeat', 'border': 'none', 'cursor': 'pointer', 'overflow': 'hidden', 'outline': 'none'}}>
+              +
+            </Button>
           </span>
         </div>
-          {newChannelModal}
+        {/* <div>
+          <Button color="danger" onClick={this.toggle}>Button Label</Button>
+          <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+            <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+            <ModalBody>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </ModalBody>
+            <ModalFooter>
+              <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
+              <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+            </ModalFooter>
+          </Modal>
+        </div> */}
+        {newChannelModal}
         <div>
           <ul style={{display: 'flex', flexDirection: 'column', listStyle: 'none', margin: '0', overflowY: 'auto', padding: '0'}}>
             {filteredChannels.map(channel =>

@@ -6,6 +6,17 @@ import { Provider } from 'react-redux'
 import Main from '../containers/Main'
 // [MM] -||-
 import TrackDragon from '../containers/TrackDragon'
+import MenuAppBar from '../components/MenuAppBar'
+import MenuAppDrawer from '../components/MenuAppDrawer'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+const theme = createMuiTheme({
+    palette: {
+        type: 'dark', // Switching the dark mode on is a single property value change.
+    },
+    typography: { 
+        useNextVariants: true 
+    },
+})
 // [MM] chat
 import DevTools from '../containers/DevTools'
 import SignIn from '../components/SignIn'
@@ -219,6 +230,7 @@ class App extends Component {
         <Provider store={this.props.store}>
             <CookiesProvider>
             <RRWAEngine store={this.props.store} />
+            <MuiThemeProvider theme={theme}>
             <div style={{height: '100%'}}>
                 
                 {/* <h1 style={{textAlign: 'center'}}>HEY HEY HEY from React -- Live Polling</h1> */}
@@ -252,6 +264,8 @@ class App extends Component {
                                 {/* <Audio src='http://trackdragon.com/wp-content/uploads/2014/04/Salesman.mp3' 
                                     autoPlay uniqueId='example' controls loop /> */}
                                 
+                                <MenuAppBar />
+                                <MenuAppDrawer />
                                 <TrackDragon {...this.state} {...props} />
                                 <Main {...this.state} />
                             </div>
@@ -266,6 +280,8 @@ class App extends Component {
                         {/* <Route exact path="/" component={Audience} /> */}
                         <Route exact path="/audience" render={(props) => (
                             <div>
+                                <MenuAppBar />
+                                <MenuAppDrawer />
                                 <Audience {...this.state} emit={this.emit} />
                                 {/* <Main {...this.state} /> */}
                             </div>
@@ -273,6 +289,8 @@ class App extends Component {
                         {/* <Route name="speaker" path="/speaker" component={Speaker} {...this.state} /> */}
                         <Route exact path="/speaker" render={(props) => (
                             <div>
+                                <MenuAppBar />
+                                <MenuAppDrawer />
                                 <Speaker {...this.state} emit={this.emit} />
                                 {/* <Main {...this.state} /> */}
                             </div>
@@ -280,6 +298,8 @@ class App extends Component {
                         {/* <Route name="board" path="/board" handler={Board} {...this.state} /> */}
                         <Route exact path="/board" render={(props) => (
                             <div>
+                                <MenuAppBar />
+                                <MenuAppDrawer />
                                 <Board {...this.state} emit={this.emit} />
                                 {/* <Main {...this.state} /> */}
                             </div>
@@ -289,6 +309,8 @@ class App extends Component {
                         {/* <Route path="/welcome" component={WelcomePage} /> */}
                         <Route exact path="/welcome" render={(props) => (
                             <div>
+                                <MenuAppBar />
+                                <MenuAppDrawer />
                                 <Welcome {...this.state} emit={this.emit} />
                                 {/* <Main {...this.state} /> */}
                             </div>
@@ -296,6 +318,8 @@ class App extends Component {
                         {/* <Route path="/signup" component={SignUp} /> */}
                         <Route exact path="/signup" render={(props) => (
                             <div>
+                                <MenuAppBar />
+                                <MenuAppDrawer />
                                 <SignUp {...this.state} emit={this.emit} />
                                 {/* <Main {...this.state} /> */}
                             </div>
@@ -303,6 +327,8 @@ class App extends Component {
                         {/* <Route path="/signin" component={SignIn} /> */}
                         <Route exact path="/signin" render={(props) => (
                             <div>
+                                <MenuAppBar />
+                                <MenuAppDrawer />
                                 <SignIn {...this.state} emit={this.emit} />
                                 {/* <Main {...this.state} /> */}
                             </div>
@@ -310,6 +336,8 @@ class App extends Component {
                         {/* <Route path="/signout" component={SignOut} /> */}
                         {/* <Route exact path="/signout" render={(props) => (
                             <div>
+                                <MenuAppBar />
+                                <MenuAppDrawer />
                                 <SignOut {...this.state} emit={this.emit} />
                                 <Main {...this.state} />
                             </div>
@@ -317,6 +345,8 @@ class App extends Component {
                         {/* <Route path="/chat" component={ChatContainer}></Route> */}
                         <Route exact path="/chat" render={(props) => (
                             <div>
+                                <MenuAppBar />
+                                <MenuAppDrawer />
                                 <ChatContainer {...this.state} emit={this.emit} />
                                 {/* <Main {...this.state} /> */}
                             </div>
@@ -329,6 +359,7 @@ class App extends Component {
                 <DevTools />
 
             </div>
+            </MuiThemeProvider>
             </CookiesProvider>
         </Provider>
     )

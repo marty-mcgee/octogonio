@@ -11,6 +11,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
 import InboxIcon from '@material-ui/icons/MoveToInbox'
 import MailIcon from '@material-ui/icons/Mail'
+import MenuIcon from '@material-ui/icons/Menu'
 
 const styles = {
   list: {
@@ -41,60 +42,60 @@ class MenuAppDrawer extends React.Component {
     const sideList = (
       <div className={classes.list}>
         <List>
-          <ListItem button key="home">
-            <Link to="/">
+          <Link to="/">
+            <ListItem button key="home">
               <ListItemIcon><InboxIcon /></ListItemIcon>
               <ListItemText primary="Home" />
-            </Link>
-          </ListItem>
+            </ListItem>
+          </Link>
         </List>
         <Divider />
         <List>
-          <ListItem button key="audience">
-            <Link to="/audience">
+          <Link to="/audience">
+            <ListItem button key="audience">
               <ListItemIcon><InboxIcon /></ListItemIcon>
               <ListItemText primary="Audience" />
-            </Link>
-          </ListItem>
-          <ListItem button key="speaker">
-            <Link to="/speaker">
+            </ListItem>
+          </Link>
+          <Link to="/speaker">
+            <ListItem button key="speaker">
               <ListItemIcon><InboxIcon /></ListItemIcon>
               <ListItemText primary="Speaker" />
-            </Link>
-          </ListItem>
-          <ListItem button key="board">
-            <Link to="/board">
+            </ListItem>
+          </Link>
+          <Link to="/board">
+            <ListItem button key="board">
               <ListItemIcon><InboxIcon /></ListItemIcon>
               <ListItemText primary="Board" />
-            </Link>
-          </ListItem>
+            </ListItem>
+          </Link>
         </List>
         <Divider />
         <List>
-          <ListItem button key="welcome">
-            <Link to="/welcome">
+          <Link to="/welcome">
+            <ListItem button key="welcome">
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary="Welcome" />
-            </Link>
-          </ListItem>
-          <ListItem button key="signup">
-            <Link to="/signup">
+            </ListItem>
+          </Link>
+          <Link to="/signup">
+            <ListItem button key="signup">
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary="Sign Up" />
-            </Link>
-          </ListItem>
-          <ListItem button key="signout">
-            <Link to="/signout">
+            </ListItem>
+          </Link>
+          <Link to="/signout">
+            <ListItem button key="signout">
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary="Sign Out" />
-            </Link>
-          </ListItem>
-          <ListItem button key="chat">
-            <Link to="/chat">
+            </ListItem>
+          </Link>
+          <Link to="/chat">
+            <ListItem button key="chat">
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary="Chat" />
-            </Link>
-          </ListItem>
+            </ListItem>
+          </Link>
         </List>
       </div>
     )
@@ -102,70 +103,71 @@ class MenuAppDrawer extends React.Component {
     const fullList = (
       <div className={classes.fullList}>
         <List>
-          <ListItem button key="home">
-            <Link to="/">
+          <Link to="/">
+            <ListItem button key="home">
               <ListItemIcon><InboxIcon /></ListItemIcon>
               <ListItemText primary="Home" />
-            </Link>
-          </ListItem>
+            </ListItem>
+          </Link>
         </List>
         <Divider />
         <List>
-          <ListItem button key="audience">
-            <Link to="/audience">
+          <Link to="/audience">
+            <ListItem button key="audience">
               <ListItemIcon><InboxIcon /></ListItemIcon>
               <ListItemText primary="Audience" />
-            </Link>
-          </ListItem>
-          <ListItem button key="speaker">
-            <Link to="/speaker">
+            </ListItem>
+          </Link>
+          <Link to="/speaker">
+            <ListItem button key="speaker">
               <ListItemIcon><InboxIcon /></ListItemIcon>
               <ListItemText primary="Speaker" />
-            </Link>
-          </ListItem>
-          <ListItem button key="board">
-            <Link to="/board">
+            </ListItem>
+          </Link>
+          <Link to="/board">
+            <ListItem button key="board">
               <ListItemIcon><InboxIcon /></ListItemIcon>
               <ListItemText primary="Board" />
-            </Link>
-          </ListItem>
+            </ListItem>
+          </Link>
         </List>
         <Divider />
         <List>
-          <ListItem button key="welcome">
-            <Link to="/welcome">
+          <Link to="/welcome">
+            <ListItem button key="welcome">
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary="Welcome" />
-            </Link>
-          </ListItem>
-          <ListItem button key="signup">
-            <Link to="/signup">
+            </ListItem>
+          </Link>
+          <Link to="/signup">
+            <ListItem button key="signup">
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary="Sign Up" />
-            </Link>
-          </ListItem>
-          <ListItem button key="signout">
-            <Link to="/signout">
+            </ListItem>
+          </Link>
+          <Link to="/signout">
+            <ListItem button key="signout">
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary="Sign Out" />
-            </Link>
-          </ListItem>
-          <ListItem button key="chat">
-            <Link to="/chat">
+            </ListItem>
+          </Link>
+          <Link to="/chat">
+            <ListItem button key="chat">
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary="Chat" />
-            </Link>
-          </ListItem>
+            </ListItem>
+          </Link>
         </List>
       </div>
     )
 
     return (
       <div>
-        <Button onClick={this.toggleDrawer('left', true)}>Open Left</Button>
+        {/* <Button onClick={this.toggleDrawer('left', true)}>Open Left</Button>
         <Button onClick={this.toggleDrawer('right', true)}>Open Right</Button>
         <Button onClick={this.toggleDrawer('top', true)}>Open Top</Button>
-        <Button onClick={this.toggleDrawer('bottom', true)}>Open Bottom</Button>
+        <Button onClick={this.toggleDrawer('bottom', true)}>Open Bottom</Button> */}
+        <MenuIcon onClick={this.toggleDrawer('left', true)} />
         <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
           <div
             tabIndex={0}

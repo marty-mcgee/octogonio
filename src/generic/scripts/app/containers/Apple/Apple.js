@@ -1,7 +1,8 @@
-import '../../styles/global/base.scss';
-import React, { PropTypes, Component } from 'react';
+//import '../../styles/global/base.scss'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-export default class App extends Component {
+export default class Apple extends Component {
 
   static propTypes = {
     children: PropTypes.element.isRequired,
@@ -9,10 +10,10 @@ export default class App extends Component {
     history: PropTypes.object.isRequired,
     routes: PropTypes.array,
     params: PropTypes.object,
-  };
+  }
 
   constructor() {
-    super();
+    super()
   }
 
   render() {
@@ -22,6 +23,6 @@ export default class App extends Component {
           {this.props.children}
         </div>
       </div>
-    );
+    )
   }
 }

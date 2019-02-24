@@ -8,9 +8,9 @@ import configureStore from 'store/configureStore'
 import App from './components/App'
 
 // [MM] chat
-//const store = configureStore()
-const initialState = window.__INITIAL_STATE__
-const store = configureStore(initialState)
+const store = configureStore()
+//const initialState = window.__INITIAL_STATE__
+//const store = configureStore(initialState)
 
 const render = (Component) => {
   ReactDOM.render(

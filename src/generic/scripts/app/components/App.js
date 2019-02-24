@@ -44,55 +44,10 @@ import Board from './Board'
 import { RRWAEngine, actionCreators, webAudioReducer } from 'react-redux-webaudio'
 import RRWAExamplesApp from '../components/RRWAExamplesApp'
 // [MM] schmix
-// import Apple from '../containers/App'
-// import Schmix from '../containers/Schmix'
+//import Apple from '../containers/Apple'
+import Schmix from '../containers/Schmix'
 // [MM] audio recorder
 //import AudioRecorder from 'react-audio-recorder'
-// [MM] audio player
-// import { PlayButton, Timer } from 'react-soundplayer/components'
-// // it's just an alias for `withSoundCloudAudio` but makes code clearer
-// import { withCustomAudio, withSoundCloudAudio } from 'react-soundplayer/addons'
-// // audio source
-// const streamUrl = 'http://localhost:3003/assets/audio/guitar/sixth-9-chord.mp3'
-// // some track meta information
-// const trackTitle = 'Great audio by -||- artist'
-// const clientId = '1c344815b44361828c71cf2be85e4262';
-// const resolveUrl = 'https://soundcloud.com/martymcgee';
-// const AWSSoundPlayer = withCustomAudio( props => {
-//     const { trackTitle } = props
-//     console.log("props:", props)
-
-//     return (
-//         <div>
-//             <PlayButton {...props} />
-//             <h2>{trackTitle}</h2>
-//             <Timer {...props} />
-//         </div>
-//     )
-// })
-// const Player = withSoundCloudAudio(props => {
-//     let { track, currentTime } = props;
-
-//     return (
-//       <div className="custom-player">
-//         <PlayButton
-//           className="custom-player-btn"
-//           onPlayClick={() => {
-//             console.log('play button clicked!');
-//           }}
-//           {...props} />
-//         <h2 className="custom-player-title">
-//           {track ? track.title : 'Loading...'}
-//         </h2>
-//         <Timer 
-//           className="custom-player-timer"
-//           duration={track ? track.duration / 1000 : 0} 
-//           currentTime={currentTime} 
-//           {...props} />
-//       </div>
-//     );
-// });
-
 // [MM] redux-audio
 // import { Audio } from 'redux-audio'
 
@@ -141,8 +96,9 @@ class App extends Component {
   }
 
   componentWillMount() {
-    this.socket = ioClient('http://localhost:3003')
-    console.log(this.socket)
+    //this.socket = ioClient('http://localhost:3003')
+    this.socket = ioClient('', { path: '/api/chat' })
+    console.log("HEY HEY HEY -||- SOCKET -||-", this.socket)
     this.socket.on('connect', this.connect)
     this.socket.on('disconnect', this.disconnect)
     this.socket.on('welcome', this.updateState)
@@ -245,10 +201,9 @@ class App extends Component {
             {/* <Route exact path="/" component={Main} /> */}
             <Route exact path="/" render={ (props) => (
               <div>
-                {/* <Audience {...this.state} emit={this.emit} /> */}
-                {/* <Apple>
-                  <Schmix/>
-                </Apple> */}
+                {/* <Apple> */}
+                  {/* <Schmix/> */}
+                {/* </Apple> */}
                 {/* <AudioRecorder {...this.state} /> */}
                 {/* <AWSSoundPlayer
                   resolveUrl={resolveUrl}

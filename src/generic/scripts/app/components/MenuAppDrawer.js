@@ -90,12 +90,12 @@ class MenuAppDrawer extends React.Component {
               <ListItemText primary="Sign In" />
             </ListItem>
           </Link>
-          <Link to="/signout">
+          {/* <Link to="/signout">
             <ListItem button key="signout">
               <ListItemIcon><MailIcon /></ListItemIcon>
               <ListItemText primary="Sign Out" />
             </ListItem>
-          </Link>
+          </Link> */}
           <Link to="/chat">
             <ListItem button key="chat">
               <ListItemIcon><MailIcon /></ListItemIcon>

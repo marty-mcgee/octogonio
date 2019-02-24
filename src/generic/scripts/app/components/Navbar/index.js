@@ -1,5 +1,6 @@
 import styles from './Navbar.scss';
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import { Navbar as BootstrapNavbar } from 'react-bootstrap';
 
 class Navbar extends Component {
@@ -15,7 +16,7 @@ class Navbar extends Component {
 }
 
 Navbar.propTypes = {
-  children: React.PropTypes.element
+  children: PropTypes.element
 };
 
 export default Navbar;

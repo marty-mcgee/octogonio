@@ -1,6 +1,6 @@
 {
   "name": "octogon.io",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Music generation with React, Redux, Web Audio API on MongoDB + Heroku",
   "author": "Marty McGee - @CompanyJuice",
   "main": "",

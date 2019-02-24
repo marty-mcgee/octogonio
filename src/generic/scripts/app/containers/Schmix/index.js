@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-no-bind */
-const { NodeAudio, SoundBuffer, StereoPannerNode, PluginNode, GainNode } = require('node-audio')
-//const fs = require('fs')
+// const { NodeAudio, SoundBuffer, StereoPannerNode, PluginNode, GainNode } = require('node-audio')
+// const fs = require('fs')
 
 import Immutable from 'immutable';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
-import Mixer from '../../components/Mixer';
+//import Mixer from '../../components/Mixer';
 
 import * as mixerActionCreators from './creators';
 import { connect } from 'react-redux';
@@ -25,12 +25,12 @@ const buildInputNodes = (audioContext, files) =>
 class Schmix extends Component {
   constructor(props) {
     super(props);
-    const audioContext = NodeAudio.makeAudioContext()
+    // const audioContext = NodeAudio.makeAudioContext()
     this.state = {
-      audioContext,
+      audioContext: [],
       inputNodes: [],
       bufferNodes: [],
-      outputNode: audioContext.destination(),
+      outputNode: [], // audioContext.destination(),
       files: [],
       bufferSources: [],
       availablePlugins: [],
@@ -104,7 +104,7 @@ class Schmix extends Component {
 
         </Navbar>
         <div className={styles.container}>
-          <Mixer
+          {/* <Mixer
             tracks = {this.props.tracks}
             inputNodes = {this.state.inputNodes}
             outputNode = {this.state.outputNode}
@@ -116,7 +116,7 @@ class Schmix extends Component {
             setMute = {this.props.setMute}
 
             availablePlugins={this.state.availablePlugins}
-          />
+          /> */}
           <div className={styles.spacer}/>
         </div>
       </div>

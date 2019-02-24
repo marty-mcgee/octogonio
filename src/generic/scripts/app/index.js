@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 //import { browserHistory } from 'react-router'
-import { createBrowserHistory } from 'history'
-const browserHistory = createBrowserHistory();
+import createBrowserHistory from 'history/createBrowserHistory'
+const browserHistory = createBrowserHistory()
 import { AppContainer } from 'react-hot-loader'
 import configureStore from 'store/configureStore'
 import App from './components/App'

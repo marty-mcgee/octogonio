@@ -35,7 +35,7 @@ const requireAuth = (nextState, replace) => {
 import { CookiesProvider, withCookies } from 'react-cookie'
 // [MM] polling
 import ioClient from 'socket.io-client'
-import Header from './Header'
+//import Header from './Header'
 // [MM] polling
 import Audience from './Audience'
 import Speaker from './Speaker'
@@ -49,14 +49,14 @@ import Schmix from '../containers/Schmix'
 // [MM] audio recorder
 //import AudioRecorder from 'react-audio-recorder'
 // [MM] redux-audio
-// import { Audio } from 'redux-audio'
+//import { Audio } from 'redux-audio'
 
 
 class App extends Component {
 
   constructor(props) {
     super(props)
-    // self = this
+    //self = this
     
     const { cookies } = props
 
@@ -217,7 +217,7 @@ class App extends Component {
                   resolveUrl={resolveUrl}
                   onReady={() => console.log('track is loaded!')}   
                 /> */}
-                {/* <RRWAExamplesApp /> */}
+                <RRWAExamplesApp />
                 {/* <Audio src='http://trackdragon.com/wp-content/uploads/2014/04/Salesman.mp3' 
                   autoPlay uniqueId='example' controls loop /> */}
                 

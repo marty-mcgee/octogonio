@@ -80,11 +80,11 @@ const server1 = app1.listen(3003, 'localhost', function(err) {
 const ioServer2 = new SocketIo(server1, {path: '/api/chat'})
 //const socketEvents = require('./socketEvents')(ioServer2)
 
-console.log("SocketIo ioServer2", ioServer2)
+//console.log("SocketIo ioServer2", ioServer2)
 
 ioServer2.sockets.on('connection', function(socket) {
 
-  console.log("connection socket", socket)
+  //console.log("connection socket", socket)
 
 	socket.join('Lobby')
 	socket.on('chat mounted', function(user) {
@@ -197,7 +197,7 @@ ioServer2.sockets.on('connection', function(socket) {
 	connections.push(socket)
 	console.log("ioServer2 socket connected: %s", socket.id)
 	console.log("ioServer2 socket connections: %s", connections.length)
-	console.log("ioServer2 socket connections: %s", connections)
+	//console.log("ioServer2 socket connections: %s", connections)
 })
 
 

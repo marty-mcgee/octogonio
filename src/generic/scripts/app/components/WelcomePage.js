@@ -42,14 +42,14 @@ class WelcomePage extends Component {
       return (
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
           <header style={{textAlign: 'center'}}>
-            <p>WELCOME</p>
-            <p>This is an open source group music recording program.</p>
+            <p style={{fontSize: '1.5em', marginRight: '1em'}}>OCTOGON.IO</p>
+            <p style={{fontSize: '1.2em', padding: '1em'}}>
+              WELCOME -||- This is an open source group music recording program.
+            </p>
           </header>
           <main>
             <form>
-              <FormGroup
-                controlId="formBasicTextMM3"
-              >
+              <FormGroup>
                 <TextField
                   style={{height: '2.7em', fontSize: '1.3em', width: '100%'}}
                   ref="usernameInput"
@@ -61,7 +61,7 @@ class WelcomePage extends Component {
                 />
                 <Link to="/signup">
                   <Button
-                    bsStyle="success"
+                    color="primary"
                     style={{width: '100%'}}
                     type="submit"
                     onClick={::this.handleSubmit}>
@@ -72,7 +72,7 @@ class WelcomePage extends Component {
             </form>
             <p style={{margin: '1em', textAlign: 'center'}}>or</p>
             <Link to="/signin">
-              <Button style={{width: '100%'}} bsStyle="default" >Sign In</Button>
+              <Button style={{width: '100%'}} color="secondary" >Sign In</Button>
             </Link>
           </main>
         </div>
@@ -81,18 +81,17 @@ class WelcomePage extends Component {
     return (
       <div>
         <header style={{display: 'flex', justifyContent: 'center', flexGrow: '0', order: '0'}}>
-          <div style={{justifyContent: 'center'}}><p style={{fontSize: '1.5em', marginRight: '1em'}}>OCTOGON.IO</p>
-            <p>
+          <div style={{justifyContent: 'center'}}>
+            <p style={{fontSize: '1.5em', marginRight: '1em'}}>OCTOGON.IO</p>
+            <p style={{fontSize: '1.2em', padding: '1em'}}>
               WELCOME -||- This is an open source group music recording program.
             </p>
           </div>
         </header>
         <main style={{display: 'flex', justifyContent: 'center'}}>
-          <Form style={{height: '20rem', display: 'flex', justifyContent: 'center'}}>
+          <form style={{height: '20rem', display: 'flex', justifyContent: 'center'}}>
             <div style={{margin: 'auto', paddingRight: '0.2em', height: '3.5em'}}>
-              <FormGroup
-                controlId="formBasicTextMM4"
-              >
+              <FormGroup>
                 <FormControl
                   style={{height: '2.7em', fontSize: '1.3em'}}
                   ref="usernameInput"
@@ -115,7 +114,7 @@ class WelcomePage extends Component {
                 </Button>
               </Link>
             </section>
-          </Form>
+          </form>
           <div style={{height: '3.5em', width: '12em', alignSelf: 'center', display: 'flex', marginLeft: '1em'}}>
             <p style={{marginRight: '1em', marginTop: '1em'}}> Or </p>
             <Link to="/signin">

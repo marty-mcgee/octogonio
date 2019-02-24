@@ -1,22 +1,31 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import createBrowserHistory from 'history/createBrowserHistory'
+const history = createBrowserHistory()
 import * as actions from '../actions/actions'
 import {receiveAuth} from '../actions/authActions'
 import Chat from '../components/Chat'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import io from 'socket.io-client'
+import ioClient from 'socket.io-client'
 
-const socket = io('', { path: '/api/chat' })
-console.log("socket", socket)
+const socket = ioClient('', { path: '/api/chat' })
+//console.log("socket", socket)
 const initialChannel = 'Lobby' 
 // NOTE: I hard coded this value for my example. Change this as you see fit
 
 class ChatContainer extends Component {
   componentDidMount() {
     const { dispatch, user } = this.props
-    if(!user.username) {
-      dispatch(receiveAuth())
+    if (!user.username) {
+      console.log("!user.username")
+      const heyheyhey = dispatch(receiveAuth())
+      console.log("heyheyhey", heyheyhey)
+      if (heyheyhey.user == null) {
+        console.log("SHOULDN'T BE HERE. TIME TO REDIRECT.")
+        history.push('/welcome')
+        history.go()
+      }
     }
     dispatch(actions.fetchMessages(initialChannel))
     dispatch(actions.fetchChannels(user.username))

@@ -102,9 +102,7 @@ class SignUp extends Component {
         <main style={{display: 'flex', justifyContent: 'center'}}>
           <form onSubmit={::this.handleSubmit}>
             <section>
-              <FormGroup
-                controlId="formBasicText1"
-              >
+              <FormGroup>
                 <TextField
                   label="Username"
                   ref="usernameInput"
@@ -120,9 +118,7 @@ class SignUp extends Component {
               </FormGroup>
             </section>
             <section>
-              <FormGroup
-                controlId="formBasicText2"
-              >
+              <FormGroup>
                 <TextField
                   label="Password"
                   ref="passwordInput"
@@ -135,13 +131,11 @@ class SignUp extends Component {
               </FormGroup>
             </section>
             <section>
-              <FormGroup
-                controlId="formBasicText3"
-              >
+              <FormGroup>
                 <TextField
                   label="Confirm Password"
                   ref="confirmPasswordInput"
-                  // help={this.validateConfirmPassword() === 'error' && 'Your password doesn\'t match'}
+                  //help={this.validateConfirmPassword() === 'error' && 'Your password doesn\'t match'}
                   type="password"
                   name="confirm-password"
                   value={this.state.confirmPassword}
@@ -151,7 +145,7 @@ class SignUp extends Component {
               </FormGroup>
             </section>
             <Button
-              disabled={this.validateUsername() === 'error' || this.validateConfirmPassword() === 'error' && true}
+              //disabled={this.validateUsername() === 'error' || this.validateConfirmPassword() === 'error' && true}
               color="primary"
               style={{width: '100%', height: '4rem', marginTop: '2rem'}}
               onClick={::this.handleSubmit}

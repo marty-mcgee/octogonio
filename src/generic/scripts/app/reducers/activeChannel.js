@@ -1,9 +1,9 @@
-import { CHANGE_CHANNEL } from '../constants/ActionTypes';
+import { CHANGE_CHANNEL } from '../constants/ActionTypes'
 
 const initialState = {
   name: 'Lobby',
   id: 0
-};
+}
 
 export default function activeChannel(state = initialState, action) {
   switch (action.type) {
@@ -11,9 +11,9 @@ export default function activeChannel(state = initialState, action) {
     return {
       name: action.channel.name,
       id: action.channel.id
-    };
+    }
 
   default:
-    return state;
+    return state
   }
 }

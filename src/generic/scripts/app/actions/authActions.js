@@ -1,11 +1,11 @@
-import * as types from '../constants/ActionTypes';
-import createBrowserHistory from "history/createBrowserHistory";
-const browserHistory = createBrowserHistory();
-import fetch from 'isomorphic-fetch';
-//import { Cookies } from 'react-cookie';
-import Cookies from 'universal-cookie';
-const cookies = new Cookies();
-
+import * as types from '../constants/ActionTypes'
+import createBrowserHistory from 'history/createBrowserHistory'
+const history = createBrowserHistory()
+//import { withRouter } from 'react-router-dom'
+import fetch from 'isomorphic-fetch'
+//import { Cookies } from 'react-cookie'
+import Cookies from 'universal-cookie'
+const cookies = new Cookies()
 
 export function receiveAuth() {
   const user = cookies.get('username')
@@ -17,9 +17,9 @@ export function receiveAuth() {
 
 export function checkAuth() {
   if (cookies.get('username')) {
-    return true;
+    return true
   }
-  return false;
+  return false
 }
 
 function requestSignUp() {
@@ -58,10 +58,11 @@ export function signOut() {
         if(response.ok) {
           cookies.remove('username')
           dispatch(receiveSignOut())
-          browserHistory.push('/')
+          history.push('/')
+          history.go()
         }
       })
-      .catch(error => {throw error});
+      .catch(error => {throw error})
   }
 }
 
@@ -77,12 +78,13 @@ export function signUp(user) {
       .then(response => {
         if(response.ok) {
           cookies.set('username', user.username)
-          dispatch(receiveUser(user.username));
-          browserHistory.push('/chat');
+          dispatch(receiveUser(user.username))
+          history.push('/chat')
+          history.go()
         }
       })
-      .catch(error => {throw error});
-  };
+      .catch(error => {throw error})
+  }
 }
 
 function requestSignIn() {
@@ -103,6 +105,7 @@ function receiveSignIn(username) {
 }
 
 export function signIn(user) {
+  console.log("history", history)
   return dispatch => {
     dispatch(requestSignIn())
      return fetch('/api/sign_in', {
@@ -114,12 +117,13 @@ export function signIn(user) {
       .then(response => {
         if(response.ok) {
           cookies.set('username', user.username)
-          dispatch(receiveSignIn(user.username));
-          browserHistory.push('/chat');
+          dispatch(receiveSignIn(user.username))
+          history.push('/chat')
+          history.go()
         }
       })
-      .catch(error => {throw error});
-  };
+      .catch(error => {throw error})
+  }
 }
 
 export function receiveSocket(socketID) {

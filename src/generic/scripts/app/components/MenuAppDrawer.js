@@ -84,6 +84,12 @@ class MenuAppDrawer extends React.Component {
               <ListItemText primary="Sign Up" />
             </ListItem>
           </Link>
+          <Link to="/signin">
+            <ListItem button key="signin">
+              <ListItemIcon><MailIcon /></ListItemIcon>
+              <ListItemText primary="Sign In" />
+            </ListItem>
+          </Link>
           <Link to="/signout">
             <ListItem button key="signout">
               <ListItemIcon><MailIcon /></ListItemIcon>

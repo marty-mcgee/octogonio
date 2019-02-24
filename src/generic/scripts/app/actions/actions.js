@@ -1,9 +1,9 @@
 import * as types from '../constants/ActionTypes';
-import { browserHistory } from 'react-router';
+// import { browserHistory } from 'react-router';
 import fetch from 'isomorphic-fetch';
 import moment from 'moment';
 
-// NOTE:Chat actions
+// NOTE: Chat actions
 
 function addMessage(message) {
   return {
@@ -54,7 +54,7 @@ export function changeChannel(channel) {
   };
 }
 
-// NOTE:Data Fetching actions
+// NOTE: Data Fetching actions
 
 export function welcomePage(username) {
   return {

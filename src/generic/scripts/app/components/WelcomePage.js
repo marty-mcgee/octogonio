@@ -3,20 +3,24 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { welcomePage } from '../actions/actions'
 import { connect } from 'react-redux'
-import { Button, Form, FormGroup, FormControl } from 'react-bootstrap' // Input
-import FBSignIn from './FBSignIn'
-import SignIn from './SignIn'
+// import FBSignIn from './FBSignIn'
+// import SignIn from './SignIn'
+// import { Button, Form, FormGroup, FormControl } from 'react-bootstrap' // Input
+import Button from '@material-ui/core/Button'
+import FormControl from '@material-ui/core/FormControl'
+import FormGroup from '@material-ui/core/FormGroup'
+import TextField from '@material-ui/core/TextField'
 
 class WelcomePage extends Component {
 
   static propTypes = {
     dispatch: PropTypes.func.isRequired
-  };
+  }
   constructor(props, context) {
-    super(props, context);
+    super(props, context)
     this.state = {
       username: ''
-    };
+    }
   }
   componentDidMount() {
     //this.refs.usernameInput.getInputDOMNode().focus()
@@ -27,26 +31,26 @@ class WelcomePage extends Component {
     }
   }
   handleSubmit() {
-    const { dispatch } = this.props;
-    const username = this.state.username;
-    dispatch(welcomePage(username));
-    this.setState({ username: '' });
+    const { dispatch } = this.props
+    const username = this.state.username
+    this.setState({ username: username })
+    dispatch(welcomePage(username))
   }
   render() {
-    const {screenWidth} = this.props;
+    const {screenWidth} = this.props
     if(screenWidth < 500) {
       return (
-        <div style={{display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
+        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
           <header style={{textAlign: 'center'}}>
-            <p>OCTOGON.IO</p>
+            <p>WELCOME</p>
             <p>This is an open source group music recording program.</p>
           </header>
           <main>
-            <Form>
+            <form>
               <FormGroup
                 controlId="formBasicTextMM3"
               >
-                <FormControl
+                <TextField
                   style={{height: '2.7em', fontSize: '1.3em', width: '100%'}}
                   ref="usernameInput"
                   type="text"
@@ -65,14 +69,14 @@ class WelcomePage extends Component {
                   </Button>
                 </Link>
               </FormGroup>
-            </Form>
-            <p style={{margin: '1em', textAlign: 'center'}}>Or</p>
+            </form>
+            <p style={{margin: '1em', textAlign: 'center'}}>or</p>
             <Link to="/signin">
-              <Button style={{width: '100%'}} bsStyle="default" >Sign in</Button>
+              <Button style={{width: '100%'}} bsStyle="default" >Sign In</Button>
             </Link>
           </main>
         </div>
-      );
+      )
     }
     return (
       <div>
@@ -120,7 +124,7 @@ class WelcomePage extends Component {
           </div>
         </main>
       </div>
-    );
+    )
   }
 }
 

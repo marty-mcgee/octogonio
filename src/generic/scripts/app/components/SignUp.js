@@ -2,8 +2,12 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import * as actions from '../actions/actions'
-import { Button, Form, FormGroup, FormControl } from 'react-bootstrap' // Input
 import * as authActions from '../actions/authActions'
+// import { Form, FormGroup, FormControl } from 'react-bootstrap' // Input
+import Button from '@material-ui/core/Button'
+import FormControl from '@material-ui/core/FormControl'
+import FormGroup from '@material-ui/core/FormGroup'
+import TextField from '@material-ui/core/TextField'
 
 class SignUp extends Component {
 
@@ -96,17 +100,17 @@ class SignUp extends Component {
         Sign Up
         </header>
         <main style={{display: 'flex', justifyContent: 'center'}}>
-          <Form onSubmit={::this.handleSubmit} >
-            <section style={{height: '6em'}}>
+          <form onSubmit={::this.handleSubmit}>
+            <section>
               <FormGroup
                 controlId="formBasicText1"
               >
-                <FormControl
+                <TextField
                   label="Username"
                   ref="usernameInput"
                   type="text"
                   // help={this.validateUsername() === 'error' && 'A user with that name already exists!'}
-                  bsStyle={this.validateUsername()}
+                  // bsStyle={this.validateUsername()}
                   autoFocus={true}
                   name="username"
                   value={this.state.username}
@@ -115,11 +119,11 @@ class SignUp extends Component {
                 />
               </FormGroup>
             </section>
-            <section style={{height: '6em'}}>
+            <section>
               <FormGroup
                 controlId="formBasicText2"
               >
-                <FormControl
+                <TextField
                   label="Password"
                   ref="passwordInput"
                   type="password"
@@ -130,11 +134,11 @@ class SignUp extends Component {
                 />
               </FormGroup>
             </section>
-            <section style={{height: '6em'}}>
+            <section>
               <FormGroup
                 controlId="formBasicText3"
               >
-                <FormControl
+                <TextField
                   label="Confirm Password"
                   ref="confirmPasswordInput"
                   // help={this.validateConfirmPassword() === 'error' && 'Your password doesn\'t match'}
@@ -148,13 +152,13 @@ class SignUp extends Component {
             </section>
             <Button
               disabled={this.validateUsername() === 'error' || this.validateConfirmPassword() === 'error' && true}
-              bsStyle="success"
+              color="primary"
               style={{width: '100%', height: '4rem', marginTop: '2rem'}}
               onClick={::this.handleSubmit}
               type="submit">
               <p style={{color: 'white', margin: '0', padding: '0', fontSize: '1.5em'}} >Sign Up</p>
             </Button>
-          </Form>
+          </form>
         </main>
       </div>
     );

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 //import { Router } from 'react-router'
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import createBrowserHistory from "history/createBrowserHistory";
+const history = createBrowserHistory();
 import { Provider } from 'react-redux'
 //import routes from 'routes'
 import Main from '../containers/Main'
@@ -241,7 +243,7 @@ class App extends Component {
         <Router>
           <Switch>
             {/* <Route exact path="/" component={Main} /> */}
-            <Route exact path="/" render={(props) => (
+            <Route exact path="/" render={ (props) => (
               <div>
                 {/* <Audience {...this.state} emit={this.emit} /> */}
                 {/* <Apple>
@@ -277,7 +279,7 @@ class App extends Component {
             {/* <Route status={404} path="*" /> */}
 
             {/* <Route exact path="/" component={Audience} /> */}
-            <Route exact path="/audience" render={(props) => (
+            <Route exact path="/audience" render={ (props) => (
               <div>
                 <MenuAppBar {...this.state} />
                 <Audience {...this.state} emit={this.emit} />
@@ -285,7 +287,7 @@ class App extends Component {
               </div>
             )} />
             {/* <Route name="speaker" path="/speaker" component={Speaker} {...this.state} /> */}
-            <Route exact path="/speaker" render={(props) => (
+            <Route exact path="/speaker" render={ (props) => (
               <div>
                 <MenuAppBar {...this.state} />
                 <Speaker {...this.state} emit={this.emit} />
@@ -293,7 +295,7 @@ class App extends Component {
               </div>
             )} />
             {/* <Route name="board" path="/board" handler={Board} {...this.state} /> */}
-            <Route exact path="/board" render={(props) => (
+            <Route exact path="/board" render={ (props) => (
               <div>
                 <MenuAppBar {...this.state} />
                 <Board {...this.state} emit={this.emit} />
@@ -303,7 +305,7 @@ class App extends Component {
 
             
             {/* <Route path="/welcome" component={WelcomePage} /> */}
-            <Route exact path="/welcome" render={(props) => (
+            <Route exact path="/welcome" render={ (props) => (
               <div>
                 <MenuAppBar {...this.state} />
                 <Welcome {...this.state} emit={this.emit} />
@@ -311,7 +313,7 @@ class App extends Component {
               </div>
             )} />
             {/* <Route path="/signup" component={SignUp} /> */}
-            <Route exact path="/signup" render={(props) => (
+            <Route exact path="/signup" render={ (props) => (
               <div>
                 <MenuAppBar {...this.state} />
                 <SignUp {...this.state} emit={this.emit} />
@@ -319,7 +321,7 @@ class App extends Component {
               </div>
             )} />
             {/* <Route path="/signin" component={SignIn} /> */}
-            <Route exact path="/signin" render={(props) => (
+            <Route exact path="/signin" render={ (props) => (
               <div>
                 <MenuAppBar {...this.state} />
                 <SignIn {...this.state} emit={this.emit} />
@@ -327,7 +329,7 @@ class App extends Component {
               </div>
             )} />
             {/* <Route path="/signout" component={SignOut} /> */}
-            {/* <Route exact path="/signout" render={(props) => (
+            {/* <Route exact path="/signout" render={ (props) => (
               <div>
                 <MenuAppBar {...this.state} />
                 <MenuAppDrawer {...this.state} />
@@ -336,7 +338,7 @@ class App extends Component {
               </div>
             )} /> */}
             {/* <Route path="/chat" component={ChatContainer}></Route> */}
-            <Route exact path="/chat" render={(props) => (
+            <Route exact path="/chat" render={ (props) => (
               <div>
                 <MenuAppBar {...this.state} />
                 <ChatContainer {...this.state} emit={this.emit} />

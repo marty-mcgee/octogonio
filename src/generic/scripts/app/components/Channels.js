@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import ChannelListItem from './ChannelListItem'
 import ChannelListModalItem from './ChannelListModalItem'
 import { Glyphicon, Form, FormGroup, FormControl } from 'react-bootstrap' // Input
-import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 import Button from '@material-ui/core/Button'
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
@@ -20,84 +19,84 @@ export default class Channels extends Component {
     onClick: PropTypes.func.isRequired,
     messages: PropTypes.array.isRequired,
     dispatch: PropTypes.func.isRequired
-  };
+  }
   constructor(props, context) {
-    super(props, context);
+    super(props, context)
     this.state = {
       addChannelModal: false,
       channelName: '',
       moreChannelsModal: false,
       // modal: false
-    };
-    //this.toggle = this.toggle.bind(this);
+    }
+    //this.toggle = this.toggle.bind(this)
   }
   handleChangeChannel(channel) {
     if(this.state.moreChannelsModal) {
-      this.closeMoreChannelsModal();
+      this.closeMoreChannelsModal()
     }
-    this.props.onClick(channel);
+    this.props.onClick(channel)
   }
   openAddChannelModal(event) {
-    event.preventDefault();
-    //this.setState({addChannelModal: true});
+    event.preventDefault()
+    //this.setState({addChannelModal: true})
     this.setState(prevState => ({
       addChannelModal: !prevState.addChannelModal
-    }));
+    }))
     console.log("event", event)
   }
   closeAddChannelModal(event) {
     try { 
-      event.preventDefault();
+      event.preventDefault()
     } catch (e) {
-      console.log(e);
+      console.log(e)
     }
-    this.setState({addChannelModal: false});
+    this.setState({addChannelModal: false})
   }
   handleModalChange(event) {
-    this.setState({channelName: event.target.value});
+    this.setState({channelName: event.target.value})
   }
   handleModalSubmit(event) {
-    const { channels, dispatch, socket } = this.props;
-    event.preventDefault();
+    const { channels, dispatch, socket } = this.props
+    event.preventDefault()
     if (this.state.channelName.length < 1) {
-      this.refs.channelName.getInputDOMNode().focus();
+      this.refs.channelName.getInputDOMNode().focus()
     }
     console.log("-||- this.state", this.state)
     if (this.state.channelName.length > 0 && channels.filter(channel => {
-      return channel.name === this.state.channelName.trim();
+      return channel.name === this.state.channelName.trim()
     }).length < 1) {
       const newChannel = {
         name: this.state.channelName.trim(),
         id: `${Date.now()}${uuid.v4()}`,
         private: false
-      };
-      dispatch(actions.createChannel(newChannel));
-      this.handleChangeChannel(newChannel);
-      socket.emit('new channel', newChannel);
-      this.setState({channelName: ''});
-      this.closeAddChannelModal();
+      }
+      dispatch(actions.createChannel(newChannel))
+      this.handleChangeChannel(newChannel)
+      socket.emit('new channel', newChannel)
+      this.setState({channelName: ''})
+      this.closeAddChannelModal()
     }
   }
   validateChannelName() {
-    const { channels } = this.props;
+    const { channels } = this.props
     if (channels.filter(channel => {
-      return channel.name === this.state.channelName.trim();
+      return channel.name === this.state.channelName.trim()
     }).length > 0) {
-      return 'error';
+      return 'error'
     }
-    return 'success';
+    return 'success'
   }
   openMoreChannelsModal(event) {
-    event.preventDefault();
-    this.setState({moreChannelsModal: true});
+    event.preventDefault()
+    this.setState({moreChannelsModal: true})
   }
   closeMoreChannelsModal(event) {
-    //event.preventDefault();
-    this.setState({moreChannelsModal: false});
+    //event.preventDefault()
+    this.setState({moreChannelsModal: false})
   }
   createChannelWithinModal() {
-    this.closeMoreChannelsModal();
-    this.openAddChannelModal();
+    this.closeMoreChannelsModal()
+    this.openAddChannelModal()
   }
   // toggle() {
   //   console.log("modal clicked")
@@ -105,31 +104,28 @@ export default class Channels extends Component {
   //     modal: !prevState.modal
   //   }), () => {
   //     console.log("modal state", this.state.modal)
-  //   });
+  //   })
   // }
-  shouldComponentUpdate(nextProps, nextState) {
-    if (this.props.channels !== nextProps.channels) {
-      console.log("HEY HEY HEY CHANNELS")
-      return true;
-    }
-    if (this.props.messages !== nextProps.messages) {
-      console.log("HEY HEY HEY MESSAGES")
-      return true;
-    }
-    console.log("HEY HEY HEY FALSE")
-    return true;
-  }
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   if (this.props.channels !== nextProps.channels) {
+  //     console.log("HEY HEY HEY CHANNELS")
+  //     return true
+  //   }
+  //   if (this.props.messages !== nextProps.messages) {
+  //     console.log("HEY HEY HEY MESSAGES")
+  //     return true
+  //   }
+  //   console.log("HEY HEY HEY FALSE")
+  //   return true
+  // }
   render() {
-    const { channels, messages } = this.props;
-    const filteredChannels = channels.slice(0, 8);
-    const moreChannelsBoolean = channels.length > 8;
-    const restOfTheChannels = channels.slice(8);
+    const { channels, messages } = this.props
+    const filteredChannels = channels.slice(0, 8)
+    const moreChannelsBoolean = channels.length > 8
+    const restOfTheChannels = channels.slice(8)
     const newChannelModal = (
       <Dialog key={1} open={this.state.addChannelModal} onClose={::this.closeAddChannelModal} aria-labelledby="simple-dialog-title">
         <DialogTitle id="simple-dialog-title">Add New Channel</DialogTitle>
-        {/* <Modal key={1} isOpen={this.state.addChannelModal} toggle={::this.openAddChannelModal} className={this.props.className}>
-          <ModalHeader toggle={::this.openAddChannelModal}>Add New Channel</ModalHeader>
-          <ModalBody> */}
         <DialogContent>
           <Form onSubmit={::this.handleModalSubmit} >
             <FormControl
@@ -152,7 +148,7 @@ export default class Channels extends Component {
           </DialogActions>
         </DialogContent>
       </Dialog>
-    );
+    )
     const moreChannelsModal = (
       <div style={{background: 'grey'}}>
         <Dialog key={2} open={this.state.moreChannelsModal} onClose={::this.closeMoreChannelsModal} aria-labelledby="simple-dialog-title-more">
@@ -171,26 +167,8 @@ export default class Channels extends Component {
             <Button onClick={::this.closeMoreChannelsModal}>Cancel</Button>
           </DialogActions>
         </Dialog>
-        {/* <Modal key={2} show={this.state.moreChannelsModal} onHide={::this.closeMoreChannelsModal}>
-          <Modal.Header closeButton >
-            <Modal.Title>More Channels</Modal.Title>
-            <a onClick={::this.createChannelWithinModal} style={{'cursor': 'pointer', 'color': '#85BBE9'}}>
-              Create a channel
-            </a>
-          </Modal.Header>
-          <Modal.Body>
-            <ul style={{height: 'auto', margin: '0', overflowY: 'auto', padding: '0'}}>
-              {restOfTheChannels.map(channel =>
-                <ChannelListModalItem channel={channel} key={channel.id} onClick={::this.handleChangeChannel} />
-                )}
-            </ul>
-          </Modal.Body>
-          <Modal.Footer>
-            <button onClick={::this.closeMoreChannelsModal}>Cancel</button>
-          </Modal.Footer>
-        </Modal> */}
       </div>
-    );
+    )
     return (
       <section>
         <div>
@@ -201,25 +179,12 @@ export default class Channels extends Component {
             </Button>
           </span>
         </div>
-        {/* <div>
-          <Button color="danger" onClick={this.toggle}>Button Label</Button>
-          <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
-            <ModalBody>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </ModalBody>
-            <ModalFooter>
-              <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-              <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-            </ModalFooter>
-          </Modal>
-        </div> */}
         {newChannelModal}
         <div>
           <ul style={{display: 'flex', flexDirection: 'column', listStyle: 'none', margin: '0', overflowY: 'auto', padding: '0'}}>
             {filteredChannels.map(channel =>
-              <ChannelListItem  style={{paddingLeft: '0.8em', background: '#2E6DA4', height: '0.7em'}} messageCount={messages.filter(msg => {
-                return msg.channelID === channel.name;
+              <ChannelListItem style={{paddingLeft: '0.8em', height: '0.7em'}} messageCount={messages.filter(msg => {
+                return msg.channelID === channel.name
               }).length} channel={channel} key={channel.id} onClick={::this.handleChangeChannel} />
               )}
           </ul>
@@ -227,6 +192,6 @@ export default class Channels extends Component {
           {moreChannelsModal}
         </div>
       </section>
-    );
+    )
   }
 }

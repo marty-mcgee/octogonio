@@ -15,82 +15,82 @@ class SignUp extends Component {
     welcomePage: PropTypes.string.isRequired,
     userValidation: PropTypes.array.isrequired,
     dispatch: PropTypes.func.isRequired
-  };
+  }
   constructor(props, context) {
-    super(props, context);
+    super(props, context)
     this.state = {
       username: this.props.welcomePage || '',
       password: '',
       confirmPassword: ''
-    };
+    }
   }
   componentWillMount() {
-    const { dispatch, userValidation } = this.props;
+    const { dispatch, userValidation } = this.props
     if(userValidation.length === 0) {
-      dispatch(actions.usernameValidationList());
+      dispatch(actions.usernameValidationList())
     }
   }
   componentDidMount() {
     if (this.state.username.length) {
-      //this.refs.passwordInput.getInputDOMNode().focus();
+      //this.refs.passwordInput.getInputDOMNode().focus()
     } else {
-      //this.refs.usernameInput.getInputDOMNode().focus();
+      //this.refs.usernameInput.getInputDOMNode().focus()
     }
   }
   handleSubmit(event) {
-    event.preventDefault();
-    const { dispatch } = this.props;
+    event.preventDefault()
+    const { dispatch } = this.props
     if (!this.state.username.length) {
-      //this.refs.usernameInput.getInputDOMNode().focus();
+      //this.refs.usernameInput.getInputDOMNode().focus()
     }
     if (this.state.username.length && !this.state.password.length) {
-      //this.refs.passwordInput.getInputDOMNode().focus();
+      //this.refs.passwordInput.getInputDOMNode().focus()
     }
     if (this.state.username.length && this.state.password.length && !this.state.confirmPassword.length) {
-      //this.refs.confirmPasswordInput.getInputDOMNode().focus();
+      //this.refs.confirmPasswordInput.getInputDOMNode().focus()
     }
     if (this.state.username.length && this.state.password.length && this.state.confirmPassword.length) {
       const userObj = {
         username: this.state.username,
         password: this.state.password,
         confirmPassword: this.state.confirmPassword
-      };
+      }
       dispatch(authActions.signUp(userObj))
       const initLobby = {
         name: "Lobby",
         id: 0,
         private: false
-      };
-      dispatch(actions.createChannel(initLobby));
-      this.setState({ username: '', password: '', confirmPassword: ''});
+      }
+      dispatch(actions.createChannel(initLobby))
+      this.setState({ username: '', password: '', confirmPassword: ''})
     }
   }
   handleChange(event) {
     if (event.target.name === 'username') {
-      this.setState({ username: event.target.value });
+      this.setState({ username: event.target.value })
     }
     if (event.target.name === 'password') {
-      this.setState({ password: event.target.value });
+      this.setState({ password: event.target.value })
     }
     if (event.target.name === 'confirm-password') {
-      this.setState({ confirmPassword: event.target.value });
+      this.setState({ confirmPassword: event.target.value })
     }
   }
   validateUsername() {
-    const { userValidation } = this.props;
+    const { userValidation } = this.props
     if (userValidation.filter(user => {
-      return user === this.state.username.trim();
+      return user === this.state.username.trim()
     }).length > 0) {
-      return 'error';
+      return 'error'
     }
-    return 'success';
+    return 'success'
   }
   validateConfirmPassword() {
     if (this.state.confirmPassword.length > 0 && this.state.password.length > 0) {
       if (this.state.password === this.state.confirmPassword) {
-        return 'success';
+        return 'success'
       }
-      return 'error';
+      return 'error'
     }
   }
   render() {
@@ -155,7 +155,7 @@ class SignUp extends Component {
           </form>
         </main>
       </div>
-    );
+    )
   }
 }
 

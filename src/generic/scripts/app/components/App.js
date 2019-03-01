@@ -217,11 +217,11 @@ class App extends Component {
                   resolveUrl={resolveUrl}
                   onReady={() => console.log('track is loaded!')}   
                 /> */}
-                <RRWAExamplesApp />
                 {/* <Audio src='http://trackdragon.com/wp-content/uploads/2014/04/Salesman.mp3' 
                   autoPlay uniqueId='example' controls loop /> */}
                 
                 <MenuAppBar {...this.state} />
+                <RRWAExamplesApp />
                 <TrackDragon {...this.state} {...props} />
                 <Main {...this.state} />
               </div>

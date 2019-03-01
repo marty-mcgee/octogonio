@@ -79,12 +79,12 @@
 	</noscript>
 </head>
 <body class="preload" style="background-color: #333333;">
-	<div style="display: none;" class="header<% if (htmlWebpackPlugin.options.isPhoneGap) { %> header--nav-spaced <% } %>" ref="header">
+	<div style="display: flex;" class="header<% if (htmlWebpackPlugin.options.isPhoneGap) { %> header--nav-spaced <% } %>" ref="header">
 		<div class=""><% /* group-capped-x group-centered */ %>
 			<div class="group-spacing-x">
 				<div class="u-flex-row u-flex-justify">
 					<a href="/" title="Octogon.io Home"><img class="header__logo" src="<%= htmlWebpackPlugin.options.absolutePath %>assets/images/logo.png" alt="octogon.io music generator logo" /></a>
-					<% if ( 1 == 1 ) { %>
+					<% if ( 1 == 0 ) { %>
 						&nbsp;-||-&nbsp;
 						<a class="btn btn-primary" href="/audience" title="Audience">audience</a>
 						&nbsp;-||-&nbsp;

@@ -50,6 +50,8 @@ import Schmix from '../containers/Schmix'
 //import AudioRecorder from 'react-audio-recorder'
 // [MM] redux-audio
 //import { Audio } from 'redux-audio'
+// [MM] three
+import Vis from './VisWithHooks'
 
 
 class App extends Component {
@@ -221,9 +223,12 @@ class App extends Component {
                   autoPlay uniqueId='example' controls loop /> */}
                 
                 <MenuAppBar {...this.state} />
+                <Vis />
+                {/* */}
                 <RRWAExamplesApp />
                 <TrackDragon {...this.state} {...props} />
                 <Main {...this.state} />
+                {/* */}
               </div>
             )} />
             <Redirect from='/**/share/:shareID' to='share/:shareID' />

@@ -19,4 +19,4 @@ import 'libraries/HackTimer'
 import 'app/index'
 
 // [MM] reactstrap
-import 'bootstrap/dist/css/bootstrap.css'
+//import 'bootstrap/dist/css/bootstrap.css'

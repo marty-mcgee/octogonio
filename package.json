@@ -99,7 +99,7 @@
     "my-local-ip": "^1.0.0",
     "nock": "^2.18.2",
     "node-audio": "0.0.10",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "node-uuid": "^1.4.8",
     "node-watch": "^0.5.9",
     "passport": "^0.4.0",

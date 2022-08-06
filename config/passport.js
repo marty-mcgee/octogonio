@@ -1,7 +1,7 @@
 var FacebookStrategy = require('passport-facebook').Strategy;
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../src/server/models/User');
-var cookies = require('react-cookie');
+var cookies = require('react-cookie');           
 
 var host = process.env.NODE_ENV !== 'production' ? 'localhost:3000' : 'slackclone.herokuapp.com'
 if (process.env.NODE_ENV !== 'production') {

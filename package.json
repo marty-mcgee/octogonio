@@ -1,8 +1,8 @@
 {
   "name": "octogon.io",
-  "version": "0.2.3",
-  "description": "Music generation with React, Redux, Web Audio API on MongoDB + Heroku",
-  "author": "Marty McGee - @CompanyJuice",
+  "version": "0.3.0",
+  "description": "Music generation with React, Redux, Web Audio API, Express, SocketIO on MongoDB + Heroku",
+  "author": "Marty McGee, Company Juice",
   "main": "",
   "scripts": {
     "spec": "jest --verbose --colors --verbose --coverage",
@@ -42,7 +42,7 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-dynamic-import-node": "^2.2.0",
     "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-ramda": "^2.0.0",
+    "babel-plugin-ramda": "^2.1.1",
     "babel-plugin-react-transform": "^3.0.0",
     "babel-plugin-transform-function-bind": "^6.22.0",
     "babelify": "^10.0.0",

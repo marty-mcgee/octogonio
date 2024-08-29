@@ -12,7 +12,7 @@ const isProduction = nodeEnv === 'production'
 const devMode = process.env.NODE_ENV !== 'production'
 
 const sourceDir = '/src'
-const buildDir = '/www'
+const buildDir = '/public'
 const entryJSFile = `${sourceDir}/app-octogonio.js`
 const outputJSFile = '[name].[chunkhash].js'
 const outputJSFileDev = '[name].js'

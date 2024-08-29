@@ -60,7 +60,7 @@ app1.use('/api', channelRouter)
 app1.use(express.static('./www'))
 //app1.use(express.static('./node_modules/bootstrap/dist'))
 app1.get('/*', function(req, res) {
-	res.sendFile(path.join(__dirname, '../../www/index.html'), function(err) {
+	res.sendFile(path.join(__dirname, '../../public/index.html'), function(err) {
 		if (err) {
 			res.status(500).send(err)
 		}

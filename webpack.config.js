@@ -13,7 +13,7 @@ const devMode = process.env.NODE_ENV !== 'production'
 
 const sourceDir = '/src'
 const buildDir = '/www'
-const entryJSFile = `${sourceDir}/app.js`
+const entryJSFile = `${sourceDir}/app-octogonio.js`
 const outputJSFile = '[name].[chunkhash].js'
 const outputJSFileDev = '[name].js'
 const outputCSSFile = 'app.[contenthash].css'

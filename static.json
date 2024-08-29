@@ -1,5 +1,5 @@
 {
-    "root": "www/",
+    "root": "public/",
     "clean_urls": false,
     "routes": {
         "/**": "index.html"

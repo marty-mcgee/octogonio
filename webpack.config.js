@@ -13,7 +13,7 @@ const devMode = process.env.NODE_ENV !== 'production'
 
 const sourceDir = '/src'
 const buildDir = '/www'
-const entryJSFile = `${sourceDir}/generic/scripts/app.js`
+const entryJSFile = `${sourceDir}/app.js`
 const outputJSFile = '[name].[chunkhash].js'
 const outputJSFileDev = '[name].js'
 const outputCSSFile = 'app.[contenthash].css'
@@ -32,8 +32,8 @@ const cwd = process.cwd()
 
 const getModules = platform => [
   path.join(cwd, `/src/${platform}/`),
-  path.join(cwd, `/src/${platform}/scripts/`),
-  path.join(cwd, `/src/${platform}/scripts/app/`),
+  path.join(cwd, `/src/${platform}/`),
+  path.join(cwd, `/src/${platform}/app/`),
   path.join(cwd, `/src/${platform}/styles/styles/`),
 ]
 
@@ -163,10 +163,10 @@ const config = (env) => {
     plugins: [
       new webpack.NamedModulesPlugin(),
       new CopyWebpackPlugin([
-        { from: 'src/generic/static/config.xml' },
-        { from: 'src/generic/static/manifest.json' },
-        { from: 'src/generic/scripts/sw.js' },
-        { from: 'src/generic/assets', to: 'assets' },
+        { from: 'src/static/config.xml' },
+        { from: 'src/static/manifest.json' },
+        { from: 'src/sw.js' },
+        { from: 'src/assets', to: 'assets' },
         {
           from: 'node_modules/sw-toolbox/sw-toolbox.js',
           to: 'node_modules/sw-toolbox',
@@ -202,7 +202,7 @@ const config = (env) => {
       //   names: ['vendor', 'vendorReact', 'manifest'],
       // }),
       new HtmlWebpackPlugin({
-        template: './src/generic/static/index.ejs',
+        template: './src/static/index.ejs',
         inject: 'body',
         absolutePath: assetPathPrepend,
         isProduction,

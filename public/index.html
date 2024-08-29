@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>MojoTracks: a Music Generator built using React JS</title>
+
+		<link rel="icon" type="image/png" href="/assets/images/icon.png" />
+		<link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/icons/192.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/assets/images/icons/96.png">
+
+		<link rel="manifest" href="/manifest.json" async>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+		<meta name="description" content="MojoTracks: a Music Generator built using React JS">
+		<meta name="keywords" content="react, redux, music, generator, generate">
+		
+		<!-- <meta name="theme-color" content="#1e1e1e"> -->
+
+		<!-- content security policy -->
+		<meta http-equiv="Content-Security-Policy"
+						content="default-src * blob:;
+											style-src * 'self' 'unsafe-inline' 'unsafe-eval';
+											script-src * 'self' 'unsafe-inline' 'unsafe-eval' data:;
+											worker-src * blob: 'self' 'unsafe-inline' 'unsafe-eval';"
+		>
+
+		<!-- Apple metadata -->
+		<meta name="apple-mobile-web-app-title" content=": a Music Generator built using React JS">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- <meta name="apple-mobile-web-app-status-bar-style" content="#1e1e1e"> -->
+		<meta name="format-detection" content="telephone=no">
+		<!-- <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/icons/57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/icons/60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/icons/72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/icons/76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/icons/114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/icons/120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/icons/144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/icons/152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/180.png"> -->
+		
+		<!-- Microsoft metadata -->
+		<meta name="msapplication-TileColor" content="#1e1e1e">
+		<meta name="msapplication-TileImage" content="/assets/images/icons/144.png">
+
+		<!-- Google metadata : Schema.org markup -->\
+		<meta itemprop="name" content="MojoTracks">
+		<meta itemprop="description" content="MojoTracks: a Music Generator built using React JS">
+		<meta itemprop="url" content="https://mojotracks.com/">
+		<meta itemprop="image" content="https://mojotracks.com/assets/images/icon.png">
+
+		<!-- Meta (Facebook) Open Graph metadata -->
+		<meta property="og:title" content="MojoTracks">
+		<meta property="og:description" content="MojoTracks: a Music Generator built using React JS">
+		<meta property="og:url" content="https://mojotracks.com/">
+		<meta property="og:image" content="https://mojotracks.com/assets/images/icon.png">
+
+		<!-- Twitter Card (X) metadata -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="MojoTracks">
+		<meta name="twitter:description" content="MojoTracks: a Music Generator built using React JS">
+		<meta name="twitter:creator" content="@martymcgee">
+		<meta name="twitter:image" content="https://mojotracks.com/assets/images/icon.png">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					families: ['Open Sans: 300,400,500,700,900']
+				}
+			});
+		</script>
+
+	</head>
+	<body class="preload" style="background-color: #333333;">
+
+		<div style="display: flex;" class="header" ref="header">
+			<div class="">
+				<div class="group-spacing-x">
+					<div class="u-flex-row u-flex-justify">
+						<a href="/" title="Octogon.io Home"><img class="header__logo" src="/assets/images/logo.png" alt="octogon.io music generator logo" /></a>					
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="root"></div>
+
+		<!-- VITE -->
+    <script type="module" src="/src/main.jsx"></script>
+
+		<!-- WEBPACK -->
+		<script type="text/javascript" src="/main.js" defer></script>
+		<script type="text/javascript" src="/vendorReact.js" defer></script>
+		<script type="text/javascript" src="/vendor.js" defer></script>
+
+	</body>
+</html>

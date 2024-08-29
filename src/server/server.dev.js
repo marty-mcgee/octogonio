@@ -37,7 +37,7 @@ var connections = []
 var title = 'Untitled Room'
 var audience = []
 var speaker = {}
-var questions = require('../generic/scripts/app/utils/questions')
+var questions = require('../app/utils/questions')
 var currentQuestion = false
 var results = {
 	a: 0,

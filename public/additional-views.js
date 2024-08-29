@@ -37,9 +37,9 @@ module.exports = prop;
 
 /***/ }),
 
-/***/ "./src/app/components/AllowedLengthsController.js":
+/***/ "./app/components/AllowedLengthsController.js":
 /*!************************************************************************!*\
-  !*** ./src/app/components/AllowedLengthsController.js ***!
+  !*** ./app/components/AllowedLengthsController.js ***!
   \************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -64,7 +64,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var deep_equal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! deep-equal */ "./node_modules/deep-equal/index.js");
 /* harmony import */ var deep_equal__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(deep_equal__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var components_NotePanel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! components/NotePanel */ "./src/app/components/NotePanel.js");
+/* harmony import */ var components_NotePanel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! components/NotePanel */ "./app/components/NotePanel.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -206,9 +206,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/components/FadeOutDurationController.js":
+/***/ "./app/components/FadeOutDurationController.js":
 /*!*************************************************************************!*\
-  !*** ./src/app/components/FadeOutDurationController.js ***!
+  !*** ./app/components/FadeOutDurationController.js ***!
   \*************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -227,8 +227,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! components/InputBox */ "./src/app/components/InputBox.js");
-/* harmony import */ var utils_tools__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! utils/tools */ "./src/app/utils/tools.js");
+/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! components/InputBox */ "./app/components/InputBox.js");
+/* harmony import */ var utils_tools__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! utils/tools */ "./app/utils/tools.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -353,9 +353,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/components/HitChanceController.js":
+/***/ "./app/components/HitChanceController.js":
 /*!*******************************************************************!*\
-  !*** ./src/app/components/HitChanceController.js ***!
+  !*** ./app/components/HitChanceController.js ***!
   \*******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -374,7 +374,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! components/InputBox */ "./src/app/components/InputBox.js");
+/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! components/InputBox */ "./app/components/InputBox.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -496,9 +496,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/components/InstrumentList.js":
+/***/ "./app/components/InstrumentList.js":
 /*!**************************************************************!*\
-  !*** ./src/app/components/InstrumentList.js ***!
+  !*** ./app/components/InstrumentList.js ***!
   \**************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -532,18 +532,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var components_Expandable__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! components/Expandable */ "./src/app/components/Expandable.js");
-/* harmony import */ var components_FadeOutDurationController__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! components/FadeOutDurationController */ "./src/app/components/FadeOutDurationController.js");
-/* harmony import */ var components_PitchController__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! components/PitchController */ "./src/app/components/PitchController.js");
-/* harmony import */ var components_RepeatingHitsController__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! components/RepeatingHitsController */ "./src/app/components/RepeatingHitsController.js");
-/* harmony import */ var components_SequenceController__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! components/SequenceController */ "./src/app/components/SequenceController.js");
-/* harmony import */ var components_SVG__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! components/SVG */ "./src/app/components/SVG.js");
-/* harmony import */ var components_Tabgroup__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! components/Tabgroup */ "./src/app/components/Tabgroup.js");
-/* harmony import */ var components_VolumeController__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! components/VolumeController */ "./src/app/components/VolumeController.js");
-/* harmony import */ var modules_getPercentage__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! modules/getPercentage */ "./src/app/modules/getPercentage.js");
-/* harmony import */ var utils_audio__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! utils/audio */ "./src/app/utils/audio.js");
-/* harmony import */ var utils_audioContext__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! utils/audioContext */ "./src/app/utils/audioContext.js");
-/* harmony import */ var utils_tools__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! utils/tools */ "./src/app/utils/tools.js");
+/* harmony import */ var components_Expandable__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! components/Expandable */ "./app/components/Expandable.js");
+/* harmony import */ var components_FadeOutDurationController__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! components/FadeOutDurationController */ "./app/components/FadeOutDurationController.js");
+/* harmony import */ var components_PitchController__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! components/PitchController */ "./app/components/PitchController.js");
+/* harmony import */ var components_RepeatingHitsController__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! components/RepeatingHitsController */ "./app/components/RepeatingHitsController.js");
+/* harmony import */ var components_SequenceController__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! components/SequenceController */ "./app/components/SequenceController.js");
+/* harmony import */ var components_SVG__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! components/SVG */ "./app/components/SVG.js");
+/* harmony import */ var components_Tabgroup__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! components/Tabgroup */ "./app/components/Tabgroup.js");
+/* harmony import */ var components_VolumeController__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! components/VolumeController */ "./app/components/VolumeController.js");
+/* harmony import */ var modules_getPercentage__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! modules/getPercentage */ "./app/modules/getPercentage.js");
+/* harmony import */ var utils_audio__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! utils/audio */ "./app/utils/audio.js");
+/* harmony import */ var utils_audioContext__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! utils/audioContext */ "./app/utils/audioContext.js");
+/* harmony import */ var utils_tools__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! utils/tools */ "./app/utils/tools.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -940,9 +940,9 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./src/app/components/NotePanel.js":
+/***/ "./app/components/NotePanel.js":
 /*!*********************************************************!*\
-  !*** ./src/app/components/NotePanel.js ***!
+  !*** ./app/components/NotePanel.js ***!
   \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -963,9 +963,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_objectSpread__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectSpread__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var modules_getAbsolutePath__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! modules/getAbsolutePath */ "./src/app/modules/getAbsolutePath.js");
-/* harmony import */ var modules_getPercentage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! modules/getPercentage */ "./src/app/modules/getPercentage.js");
-/* harmony import */ var utils_tools__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! utils/tools */ "./src/app/utils/tools.js");
+/* harmony import */ var modules_getAbsolutePath__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! modules/getAbsolutePath */ "./app/modules/getAbsolutePath.js");
+/* harmony import */ var modules_getPercentage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! modules/getPercentage */ "./app/modules/getPercentage.js");
+/* harmony import */ var utils_tools__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! utils/tools */ "./app/utils/tools.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -1153,9 +1153,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/components/PitchController.js":
+/***/ "./app/components/PitchController.js":
 /*!***************************************************************!*\
-  !*** ./src/app/components/PitchController.js ***!
+  !*** ./app/components/PitchController.js ***!
   \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1174,7 +1174,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! components/InputBox */ "./src/app/components/InputBox.js");
+/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! components/InputBox */ "./app/components/InputBox.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -1297,9 +1297,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/components/RepeatingHitsController.js":
+/***/ "./app/components/RepeatingHitsController.js":
 /*!***********************************************************************!*\
-  !*** ./src/app/components/RepeatingHitsController.js ***!
+  !*** ./app/components/RepeatingHitsController.js ***!
   \***********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1320,9 +1320,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var modules_events__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! modules/events */ "./src/app/modules/events.js");
-/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! components/InputBox */ "./src/app/components/InputBox.js");
-/* harmony import */ var utils_tools__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! utils/tools */ "./src/app/utils/tools.js");
+/* harmony import */ var modules_events__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! modules/events */ "./app/modules/events.js");
+/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! components/InputBox */ "./app/components/InputBox.js");
+/* harmony import */ var utils_tools__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! utils/tools */ "./app/utils/tools.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -1445,9 +1445,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/components/SequenceController.js":
+/***/ "./app/components/SequenceController.js":
 /*!******************************************************************!*\
-  !*** ./src/app/components/SequenceController.js ***!
+  !*** ./app/components/SequenceController.js ***!
   \******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1468,7 +1468,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var utils_sequences__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! utils/sequences */ "./src/app/utils/sequences.js");
+/* harmony import */ var utils_sequences__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! utils/sequences */ "./app/utils/sequences.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -1604,9 +1604,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/components/Tabgroup.js":
+/***/ "./app/components/Tabgroup.js":
 /*!********************************************************!*\
-  !*** ./src/app/components/Tabgroup.js ***!
+  !*** ./app/components/Tabgroup.js ***!
   \********************************************************/
 /*! exports provided: default, Tabpane */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1817,9 +1817,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/components/VolumeController.js":
+/***/ "./app/components/VolumeController.js":
 /*!****************************************************************!*\
-  !*** ./src/app/components/VolumeController.js ***!
+  !*** ./app/components/VolumeController.js ***!
   \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1838,7 +1838,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! components/InputBox */ "./src/app/components/InputBox.js");
+/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! components/InputBox */ "./app/components/InputBox.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -1961,9 +1961,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/containers/Instruments.js":
+/***/ "./app/containers/Instruments.js":
 /*!***********************************************************!*\
-  !*** ./src/app/containers/Instruments.js ***!
+  !*** ./app/containers/Instruments.js ***!
   \***********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1974,8 +1974,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_objectSpread__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectSpread__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var routes_Instruments__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! routes/Instruments */ "./src/app/routes/Instruments.js");
-/* harmony import */ var actions_instruments__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! actions/instruments */ "./src/app/actions/instruments.js");
+/* harmony import */ var routes_Instruments__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! routes/Instruments */ "./app/routes/Instruments.js");
+/* harmony import */ var actions_instruments__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! actions/instruments */ "./app/actions/instruments.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -2057,9 +2057,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/containers/SequencePanel.js":
+/***/ "./app/containers/SequencePanel.js":
 /*!*************************************************************!*\
-  !*** ./src/app/containers/SequencePanel.js ***!
+  !*** ./app/containers/SequencePanel.js ***!
   \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2082,13 +2082,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var actions_sequences__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! actions/sequences */ "./src/app/actions/sequences.js");
-/* harmony import */ var actions_modal__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! actions/modal */ "./src/app/actions/modal.js");
-/* harmony import */ var components_AllowedLengthsController__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! components/AllowedLengthsController */ "./src/app/components/AllowedLengthsController.js");
-/* harmony import */ var components_BeatsController__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! components/BeatsController */ "./src/app/components/BeatsController.js");
-/* harmony import */ var components_HitChanceController__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! components/HitChanceController */ "./src/app/components/HitChanceController.js");
-/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! components/InputBox */ "./src/app/components/InputBox.js");
-/* harmony import */ var components_Tabgroup__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! components/Tabgroup */ "./src/app/components/Tabgroup.js");
+/* harmony import */ var actions_sequences__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! actions/sequences */ "./app/actions/sequences.js");
+/* harmony import */ var actions_modal__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! actions/modal */ "./app/actions/modal.js");
+/* harmony import */ var components_AllowedLengthsController__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! components/AllowedLengthsController */ "./app/components/AllowedLengthsController.js");
+/* harmony import */ var components_BeatsController__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! components/BeatsController */ "./app/components/BeatsController.js");
+/* harmony import */ var components_HitChanceController__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! components/HitChanceController */ "./app/components/HitChanceController.js");
+/* harmony import */ var components_InputBox__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! components/InputBox */ "./app/components/InputBox.js");
+/* harmony import */ var components_Tabgroup__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! components/Tabgroup */ "./app/components/Tabgroup.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -2283,9 +2283,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/containers/Sequences.js":
+/***/ "./app/containers/Sequences.js":
 /*!*********************************************************!*\
-  !*** ./src/app/containers/Sequences.js ***!
+  !*** ./app/containers/Sequences.js ***!
   \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2296,8 +2296,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_objectSpread__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectSpread__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var routes_Sequences__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! routes/Sequences */ "./src/app/routes/Sequences.js");
-/* harmony import */ var actions_sequences__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! actions/sequences */ "./src/app/actions/sequences.js");
+/* harmony import */ var routes_Sequences__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! routes/Sequences */ "./app/routes/Sequences.js");
+/* harmony import */ var actions_sequences__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! actions/sequences */ "./app/actions/sequences.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -2380,9 +2380,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/modules/getPercentage.js":
+/***/ "./app/modules/getPercentage.js":
 /*!**********************************************************!*\
-  !*** ./src/app/modules/getPercentage.js ***!
+  !*** ./app/modules/getPercentage.js ***!
   \**********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2452,9 +2452,9 @@ var _default2 = _default;
 
 /***/ }),
 
-/***/ "./src/app/routes/Instruments.js":
+/***/ "./app/routes/Instruments.js":
 /*!*******************************************************!*\
-  !*** ./src/app/routes/Instruments.js ***!
+  !*** ./app/routes/Instruments.js ***!
   \*******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2474,7 +2474,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var components_InstrumentList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! components/InstrumentList */ "./src/app/components/InstrumentList.js");
+/* harmony import */ var components_InstrumentList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! components/InstrumentList */ "./app/components/InstrumentList.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -2583,9 +2583,9 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./src/app/routes/Sequences.js":
+/***/ "./app/routes/Sequences.js":
 /*!*****************************************************!*\
-  !*** ./src/app/routes/Sequences.js ***!
+  !*** ./app/routes/Sequences.js ***!
   \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2605,7 +2605,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var containers_SequencePanel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! containers/SequencePanel */ "./src/app/containers/SequencePanel.js");
+/* harmony import */ var containers_SequencePanel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! containers/SequencePanel */ "./app/containers/SequencePanel.js");
 (function () {
   var enterModule = __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js").enterModule;
 

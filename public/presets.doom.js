@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["presets.doom"],{
 
-/***/ "./src/app/utils/presets/doom.js":
+/***/ "./app/utils/presets/doom.js":
 /*!*******************************************************!*\
-  !*** ./src/app/utils/presets/doom.js ***!
+  !*** ./app/utils/presets/doom.js ***!
   \*******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

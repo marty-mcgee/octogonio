@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["presets.black-dahlia"],{
 
-/***/ "./src/app/utils/presets/black-dahlia.js":
+/***/ "./app/utils/presets/black-dahlia.js":
 /*!***************************************************************!*\
-  !*** ./src/app/utils/presets/black-dahlia.js ***!
+  !*** ./app/utils/presets/black-dahlia.js ***!
   \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

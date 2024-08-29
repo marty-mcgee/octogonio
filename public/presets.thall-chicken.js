@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["presets.thall-chicken"],{
 
-/***/ "./src/app/utils/presets/thall-chicken.js":
+/***/ "./app/utils/presets/thall-chicken.js":
 /*!****************************************************************!*\
-  !*** ./src/app/utils/presets/thall-chicken.js ***!
+  !*** ./app/utils/presets/thall-chicken.js ***!
   \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

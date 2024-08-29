@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["presets.polyrhythms"],{
 
-/***/ "./src/app/utils/presets/polyrhythms.js":
+/***/ "./app/utils/presets/polyrhythms.js":
 /*!**************************************************************!*\
-  !*** ./src/app/utils/presets/polyrhythms.js ***!
+  !*** ./app/utils/presets/polyrhythms.js ***!
   \**************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

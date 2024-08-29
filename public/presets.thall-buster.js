@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["presets.thall-buster"],{
 
-/***/ "./src/app/utils/presets/thall-buster.js":
+/***/ "./app/utils/presets/thall-buster.js":
 /*!***************************************************************!*\
-  !*** ./src/app/utils/presets/thall-buster.js ***!
+  !*** ./app/utils/presets/thall-buster.js ***!
   \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

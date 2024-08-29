@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["presets.contortionist"],{
 
-/***/ "./src/app/utils/presets/contortionist.js":
+/***/ "./app/utils/presets/contortionist.js":
 /*!****************************************************************!*\
-  !*** ./src/app/utils/presets/contortionist.js ***!
+  !*** ./app/utils/presets/contortionist.js ***!
   \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

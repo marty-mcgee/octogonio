@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["presets.thall"],{
 
-/***/ "./src/app/utils/presets/thall.js":
+/***/ "./app/utils/presets/thall.js":
 /*!********************************************************!*\
-  !*** ./src/app/utils/presets/thall.js ***!
+  !*** ./app/utils/presets/thall.js ***!
   \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

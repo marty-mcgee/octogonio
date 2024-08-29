@@ -244,7 +244,7 @@
     "modulePaths": [
       "<rootDir>/src/",
       "<rootDir>/src/",
-      "<rootDir>/src/app/",
+      "<rootDir>/app/",
       "<rootDir>/src/styles/styles/"
     ],
     "moduleFileExtensions": [

@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["presets.high-tremolo"],{
 
-/***/ "./src/app/utils/presets/high-tremolo.js":
+/***/ "./app/utils/presets/high-tremolo.js":
 /*!***************************************************************!*\
-  !*** ./src/app/utils/presets/high-tremolo.js ***!
+  !*** ./app/utils/presets/high-tremolo.js ***!
   \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

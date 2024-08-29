@@ -2310,9 +2310,9 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./src/app.js":
+/***/ "./app.js":
 /*!************************************!*\
-  !*** ./src/app.js ***!
+  !*** ./app.js ***!
   \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -2323,13 +2323,13 @@ throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index
 
 /***/ 0:
 /*!*****************************************************************!*\
-  !*** multi react-hot-loader/patch ./src/app.js ***!
+  !*** multi react-hot-loader/patch ./app.js ***!
   \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! react-hot-loader/patch */"./node_modules/react-hot-loader/patch.js");
-module.exports = __webpack_require__(/*! C:\Users\mcgee\Sites\octogonio\src\generic\scripts\app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! C:\Users\mcgee\Sites\octogonio\src\generic\scripts\app.js */"./app.js");
 
 
 /***/ })

@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["presets.thall-triplets"],{
 
-/***/ "./src/app/utils/presets/thall-triplets.js":
+/***/ "./app/utils/presets/thall-triplets.js":
 /*!*****************************************************************!*\
-  !*** ./src/app/utils/presets/thall-triplets.js ***!
+  !*** ./app/utils/presets/thall-triplets.js ***!
   \*****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["presets.meshuggah"],{
 
-/***/ "./src/app/utils/presets/meshuggah.js":
+/***/ "./app/utils/presets/meshuggah.js":
 /*!************************************************************!*\
-  !*** ./src/app/utils/presets/meshuggah.js ***!
+  !*** ./app/utils/presets/meshuggah.js ***!
   \************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["presets.pop-punk-chorus"],{
 
-/***/ "./src/app/utils/presets/pop-punk-chorus.js":
+/***/ "./app/utils/presets/pop-punk-chorus.js":
 /*!******************************************************************!*\
-  !*** ./src/app/utils/presets/pop-punk-chorus.js ***!
+  !*** ./app/utils/presets/pop-punk-chorus.js ***!
   \******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
